@@ -1,4 +1,2 @@
-//  1log "hello,javascript!" to the console in 3 diffrent ways
-console.log("Helllo world!");
-console.war("Helllo world!");
-console.error("Helllo world!");
+// 2   perform 35*2-(10/2)+7 and log the result
+console.log(35*2-(10/2)+7);
