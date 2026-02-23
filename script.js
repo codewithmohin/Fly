@@ -1,8 +1,4 @@
- 
- var arr2 = new Array(30);
-
-for (var i = 0; i < 30; i++) {
-    arr2[i] = i;
-}
-
-console.log(arr2);
+//  1log "hello,javascript!" to the console in 3 diffrent ways
+console.log("Helllo world!");
+console.war("Helllo world!");
+console.error("Helllo world!");
