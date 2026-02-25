@@ -1,2 +1,2 @@
-console.log(typeof 99.99); 
-// number
+console.log(typeof false); 
+// boolean
