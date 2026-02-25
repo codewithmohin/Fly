@@ -1,2 +1,2 @@
-console.log(typeof function(){}); 
-// function
+console.log(typeof 123n); 
+// bigint
