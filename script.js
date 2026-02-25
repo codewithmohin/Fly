@@ -1,2 +1,3 @@
-console.log(typeof false); 
-// boolean
+let x;
+console.log(typeof x); 
+// undefined
