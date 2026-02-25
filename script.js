@@ -1,2 +1,2 @@
-console.log(typeof null); 
-// object (this is a JS bug)
+console.log(typeof [1, 2, 3]); 
+// object
