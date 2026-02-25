@@ -1,2 +1,2 @@
-console.log(typeof 123n); 
-// bigint
+console.log(typeof Symbol("id")); 
+// symbol
