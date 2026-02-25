@@ -1,2 +1,2 @@
-console.log(typeof "Hello World"); 
-// string
+console.log(typeof 99.99); 
+// number
