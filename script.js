@@ -1,4 +1,3 @@
-let uniqueId = Symbol("user");
-let data = {};
-data[uniqueId] = 101;
-console.log(typeof uniqueId);
+let value = null;
+let check = value ?? "default";
+console.log(typeof value);
