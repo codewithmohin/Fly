@@ -1,1 +1,1 @@
-console.log(typeof {name:"Sam"});   // object
+console.log(typeof function(){});   // function
