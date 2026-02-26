@@ -1,1 +1,1 @@
-console.log(typeof undefined);   // undefined
+console.log(typeof {name:"Sam"});   // object
