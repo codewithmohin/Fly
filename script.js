@@ -1,1 +1,1 @@
-console.log(typeof false);   // boolean
+console.log(typeof NaN);   // number
