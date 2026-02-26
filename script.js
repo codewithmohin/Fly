@@ -1,2 +1,1 @@
-console.log(typeof Symbol("id")); 
-// symbol
+console.log(typeof 999n);   // bigint
