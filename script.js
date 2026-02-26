@@ -1,1 +1,1 @@
-console.log(typeof NaN);   // number
+console.log(typeof new Date());   // object
