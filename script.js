@@ -1,3 +1,5 @@
-let numbers = [10, 20, 30, 40];
-let result = numbers.map(n => n * 2);
-console.log(typeof result);
+function calculate(a, b) {
+  return a + b;
+}
+let output = calculate(5, 7);
+console.log(typeof calculate);
