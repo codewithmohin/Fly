@@ -1,6 +1,3 @@
-let user = {
-  name: "Alex",
-  age: 22,
-  isDev: true
-};
-console.log(typeof user);
+let numbers = [10, 20, 30, 40];
+let result = numbers.map(n => n * 2);
+console.log(typeof result);
