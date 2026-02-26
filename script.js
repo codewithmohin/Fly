@@ -1,1 +1,1 @@
-console.log(typeof 999n);   // bigint
+console.log(typeof undefined);   // undefined
