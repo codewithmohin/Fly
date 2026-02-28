@@ -1,2 +1,1 @@
-const obj = {a:1, b:2};
-console.log(Object.keys(obj));
+setTimeout(() => console.log("Delayed"), 1000);
