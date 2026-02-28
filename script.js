@@ -1,4 +1,2 @@
-const user = {name: "Mohin", city: "Mumbai"};
-for(let key in user) {
-    console.log(key, user[key]);
-}
+const text = "Hello World";
+console.log(text.slice(0,5));
