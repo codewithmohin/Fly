@@ -1,1 +1,3 @@
-setTimeout(() => console.log("Delayed"), 1000);
+const fruits = ["apple", "banana"];
+fruits.push("orange");
+console.log(fruits);
