@@ -1,3 +1,2 @@
-const str = "hello";
-const upper = str.toUpperCase();
-console.log(upper);
+const today = new Date();
+console.log(today.getDate());
