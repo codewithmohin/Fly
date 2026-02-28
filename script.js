@@ -1,3 +1,3 @@
-const arr = [1,2,3,4];
-const sum = arr.reduce((a,b) => a+b, 0);
-console.log(sum);
+const str = "hello";
+const upper = str.toUpperCase();
+console.log(upper);
