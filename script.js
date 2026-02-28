@@ -1,2 +1,3 @@
-const name = "Mohin";
-console.log(`Hello ${name}!`);
+const arr = [1,2,3,4];
+const sum = arr.reduce((a,b) => a+b, 0);
+console.log(sum);
