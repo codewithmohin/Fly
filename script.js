@@ -1,3 +1,4 @@
-const nums = [1,2,3,4,5];
-const evens = nums.filter(n => n % 2 === 0);
-console.log(evens);
+const user = {name: "Mohin", city: "Mumbai"};
+for(let key in user) {
+    console.log(key, user[key]);
+}
