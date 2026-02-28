@@ -1,3 +1,3 @@
-let value = null;
-let check = value ?? "default";
-console.log(typeof value);
+let count = 0;
+count++;
+console.log(count);
