@@ -1,3 +1,5 @@
-let age = 25;
-if(age >= 18) console.log("Adult");
-else console.log("Minor");
+let day = 1;
+switch(day) {
+    case 1: console.log("Monday"); break;
+    default: console.log("Other day");
+}
