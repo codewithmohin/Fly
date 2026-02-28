@@ -1,2 +1,2 @@
-const random = Math.floor(Math.random() * 10);
-console.log(random);
+const doubled = [1,2,3].map(x => x * 2);
+console.log(doubled);
