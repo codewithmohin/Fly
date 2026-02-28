@@ -1,3 +1,3 @@
-const fruits = ["apple", "banana"];
-fruits.push("orange");
-console.log(fruits);
+const num = 10.5;
+const rounded = Math.round(num);
+console.log(rounded);
