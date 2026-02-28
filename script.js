@@ -1,2 +1,2 @@
-const text = "Hello World";
-console.log(text.slice(0,5));
+const random = Math.floor(Math.random() * 10);
+console.log(random);
