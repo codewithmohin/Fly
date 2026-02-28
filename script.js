@@ -1,3 +1,2 @@
-const num = 10.5;
-const rounded = Math.round(num);
-console.log(rounded);
+const text = "JavaScript";
+console.log(text.length);
