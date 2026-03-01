@@ -1,23 +1,22 @@
 :root {
-  --primary: #059669;
-  --secondary: #10b981;
-  --accent: #06d6a0;
-  --bg: #ecfdf5;
-  --text: #065f46;
+  --primary: #ea580c;
+  --secondary: #f97316;
+  --accent: #fb923c;
+  --bg: #fff7ed;
+  --text: #7c2d12;
 }
 
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  background: linear-gradient(135deg, #fff7ed 0%, #feead4 100%);
 }
 
 .hero {
   padding: 120px 5% 80px;
   text-align: center;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
   color: #ffffff;
-  animation: bounceUp 1.5s ease infinite alternate;
 }
 
 .hero h1 {
@@ -38,8 +37,8 @@ body {
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  box-shadow: 0 8px 20px rgba(5, 150, 105, 0.2);
-  animation: bounce 1.5s ease infinite alternate;
+  box-shadow: 0 8px 20px rgba(234, 88, 12, 0.2);
+  animation: glitch 2s ease infinite;
 }
 
 .cta-button:hover {
@@ -69,10 +68,10 @@ body {
   padding: 2rem;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(5, 150, 105, 0.1);
+  box-shadow: 0 5px 20px rgba(234, 88, 12, 0.1);
   text-align: center;
   cursor: pointer;
-  animation: float 3s ease-in-out infinite;
+  animation: flicker 3s ease-in-out infinite;
 }
 
 .feature-card:hover {
@@ -86,24 +85,30 @@ body {
 }
 
 footer {
-  background: #064e3b;
-  color: #bbf7d0;
+  background: #991b1b;
+  color: #fecaca;
   text-align: center;
   padding: 2rem;
   margin-top: 4rem;
 }
 
-@keyframes bounce {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-10px); }
+@keyframes glitch {
+  0% { transform: scaleX(1) skew(0deg); }
+  10% { transform: scaleX(1.03) skew(-2deg); }
+  20% { transform: scaleX(0.98) skew(2deg); }
+  30% { transform: scaleX(1.01) skew(0deg); }
+  40% { transform: scaleX(1) skew(1deg); }
+  50% { transform: scaleX(1.02) skew(-1deg); }
+  60% { transform: scaleX(0.99) skew(0deg); }
+  70% { transform: scaleX(1) skew(2deg); }
+  80% { transform: scaleX(0.97) skew(-1deg); }
+  90% { transform: scaleX(1.01) skew(0deg); }
+  100% { transform: scaleX(1) skew(0deg); }
 }
 
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-}
-
-@keyframes bounceUp {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-8px); }
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  25% { opacity: 0.9; }
+  50% { opacity: 1; }
+  75% { opacity: 0.8; }
 }
