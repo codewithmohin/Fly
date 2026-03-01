@@ -1,7 +1,7 @@
 :root {
-  --primary: #ea580c;
-  --bg: #fff7ed;
-  --text: #7c2d12;
+  --primary: #3b82f6;
+  --bg: #0f172a;
+  --text: #f1f5f9;
 }
 
 body {
@@ -13,8 +13,8 @@ body {
 
 header {
   padding: 1rem 5%;
-  background: #ffffff;
-  box-shadow: 0 1px 5px rgba(234, 88, 12, 0.15);
+  background: rgba(15, 23, 42, 0.95);
+  box-shadow: 0 1px 5px rgba(59, 130, 246, 0.2);
 }
 
 .logo {
@@ -42,8 +42,8 @@ header {
 .hero {
   padding: 120px 5% 80px;
   text-align: center;
-  background: linear-gradient(135deg, #fed7aa 0%, #fff7ed 100%);
-  color: var(--primary);
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  color: #ffffff;
 }
 
 .hero h1 {
@@ -64,8 +64,8 @@ header {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+  text-shadow: 0 0 6px rgba(59, 130, 246, 0.5);
 }
 
 .cta-button:hover {
@@ -93,15 +93,11 @@ header {
 
 .feature-card {
   padding: 1.6rem;
-  background: #ffffff;
+  background: rgba(15, 23, 42, 0.7);
   border-radius: 10px;
-  box-shadow: 0 3px 12px rgba(234, 88, 12, 0.15);
+  box-shadow: 0 3px 12px rgba(59, 130, 246, 0.2);
   text-align: center;
-  transition: transform 0.2s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-6px);
+  border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
 .feature-card i {
@@ -111,8 +107,8 @@ header {
 }
 
 footer {
-  background: #991b1b;
-  color: #fef2f2;
+  background: #0f172a;
+  color: #bfdbfe;
   text-align: center;
   padding: 1.8rem;
   margin-top: 3rem;
