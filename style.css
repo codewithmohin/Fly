@@ -1,7 +1,7 @@
 :root {
-  --primary: #059669;
-  --bg: #ecfdf5;
-  --text: #065f46;
+  --primary: #ea580c;
+  --bg: #fff7ed;
+  --text: #7c2d12;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 header {
   padding: 1rem 5%;
   background: #ffffff;
-  box-shadow: 0 1px 5px rgba(5, 150, 105, 0.1);
+  box-shadow: 0 1px 5px rgba(234, 88, 12, 0.15);
 }
 
 .logo {
@@ -42,7 +42,7 @@ header {
 .hero {
   padding: 120px 5% 80px;
   text-align: center;
-  background: linear-gradient(135deg, #a7f3d0 0%, #ecfdf5 100%);
+  background: linear-gradient(135deg, #fed7aa 0%, #fff7ed 100%);
   color: var(--primary);
 }
 
@@ -64,11 +64,12 @@ header {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.3);
 }
 
 .features {
@@ -94,9 +95,13 @@ header {
   padding: 1.6rem;
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 3px 12px rgba(5, 150, 105, 0.15);
+  box-shadow: 0 3px 12px rgba(234, 88, 12, 0.15);
   text-align: center;
-  animation: floatSmall 3s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
 }
 
 .feature-card i {
@@ -106,14 +111,9 @@ header {
 }
 
 footer {
-  background: #064e3b;
-  color: #bbf7d0;
+  background: #991b1b;
+  color: #fef2f2;
   text-align: center;
   padding: 1.8rem;
   margin-top: 3rem;
-}
-
-@keyframes floatSmall {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
 }
