@@ -1,7 +1,7 @@
 :root {
-  --primary: #7c3aed;
-  --bg: #f5f3ff;
-  --text: #4c1d95;
+  --primary: #059669;
+  --bg: #ecfdf5;
+  --text: #065f46;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
 header {
   padding: 1rem 5%;
   background: #ffffff;
-  box-shadow: 0 1px 5px rgba(124, 58, 237, 0.15);
+  box-shadow: 0 1px 5px rgba(5, 150, 105, 0.1);
 }
 
 .logo {
@@ -42,7 +42,7 @@ header {
 .hero {
   padding: 120px 5% 80px;
   text-align: center;
-  background: linear-gradient(135deg, #ddd6fe 0%, #f5f3ff 100%);
+  background: linear-gradient(135deg, #a7f3d0 0%, #ecfdf5 100%);
   color: var(--primary);
 }
 
@@ -64,12 +64,11 @@ header {
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
-  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
-  animation: pulse 1.4s ease-in-out infinite alternate;
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(5, 150, 105, 0.3);
 }
 
 .features {
@@ -95,13 +94,9 @@ header {
   padding: 1.6rem;
   background: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 3px 12px rgba(124, 58, 237, 0.15);
+  box-shadow: 0 3px 12px rgba(5, 150, 105, 0.15);
   text-align: center;
-  transition: transform 0.2s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-6px);
+  animation: floatSmall 3s ease-in-out infinite;
 }
 
 .feature-card i {
@@ -111,20 +106,14 @@ header {
 }
 
 footer {
-  background: #3b0764;
-  color: #e9d5ff;
+  background: #064e3b;
+  color: #bbf7d0;
   text-align: center;
   padding: 1.8rem;
   margin-top: 3rem;
 }
 
-@keyframes pulse {
-  from {
-    transform: scale(0.98);
-    box-shadow: 0 3px 10px rgba(124, 58, 237, 0.3);
-  }
-  to {
-    transform: scale(1.02);
-    box-shadow: 0 6px 18px rgba(124, 58, 237, 0.4);
-  }
+@keyframes floatSmall {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
 }
