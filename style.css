@@ -1,24 +1,24 @@
 :root {
-  --primary: #8b5cf6;
-  --bg: #030712;
-  --text: #e2e8f0;
+  --primary: #ec4899;
+  --bg: #fdf2f8;
+  --text: #4b5563;
 }
 
 body {
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: "Inter", sans-serif;
   background: var(--bg);
   color: var(--text);
 }
 
 header {
   padding: 1rem 5%;
-  background: rgba(9, 15, 26, 0.9);
-  box-shadow: 0 1px 5px rgba(139, 92, 246, 0.2);
+  background: white;
+  border-bottom: 1px solid #fbcfe8;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--primary);
 }
@@ -26,12 +26,12 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.8rem;
+  gap: 1.6rem;
 }
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text);
+  color: #4b5563;
   font-weight: 500;
 }
 
@@ -40,34 +40,34 @@ header {
 }
 
 .hero {
-  padding: 100px 5%;
+  padding: 80px 5% 60px;
   text-align: center;
-  background: linear-gradient(135deg, #0f172a 0%, #030712 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, #fdf2f8 0%, #fbe7f3 100%);
+  color: #1f2937;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  font-weight: 300;
-  line-height: 1.1;
-  margin-bottom: 1rem;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
 }
 
 .hero p {
-  font-size: 1.15rem;
-  margin-bottom: 1.6rem;
-  color: #cbd5e1;
+  font-size: 1.1rem;
+  margin-bottom: 1.4rem;
+  color: #6b7280;
 }
 
 .cta-button {
-  padding: 0.9rem 2.2rem;
+  padding: 0.9rem 2rem;
   background: var(--primary);
   color: #ffffff;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3);
   display: inline-block;
-  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
 }
 
 .cta-button:hover {
@@ -75,42 +75,42 @@ header {
 }
 
 .features {
-  padding: 5rem 5%;
+  padding: 4rem 5%;
   max-width: 1100px;
   margin: 0 auto;
 }
 
 .features h2 {
   text-align: center;
-  font-size: 2.4rem;
-  margin-bottom: 2.2rem;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
   color: var(--primary);
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
 }
 
 .feature-card {
-  padding: 1.8rem;
-  background: rgba(15, 23, 42, 0.8);
-  border-radius: 14px;
-  border: 1px solid rgba(139, 92, 246, 0.3);
-  box-shadow: 0 6px 18px rgba(139, 92, 246, 0.15);
+  padding: 1.6rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #fbcfe8;
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.1);
 }
 
 .feature-card i {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: var(--primary);
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.8rem;
 }
 
 footer {
-  background: #030712;
-  color: #94a3b8;
+  background: #fbe7f3;
+  color: #6b7280;
   text-align: center;
-  padding: 2rem 5%;
+  padding: 1.8rem 5%;
   margin-top: 3rem;
 }
