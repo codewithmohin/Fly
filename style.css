@@ -1,24 +1,24 @@
 :root {
-  --primary: #b91c1c;
-  --bg: #fdf6e3;
-  --text: #262626;
+  --primary: #fbbf24; /* warm yellow */
+  --bg: #fefce8;
+  --text: #4d4d4d;
 }
 
 body {
   margin: 0;
-  font-family: "Georgia", sans-serif;
+  font-family: "Poppins", sans-serif;
   background: var(--bg);
   color: var(--text);
 }
 
 header {
   padding: 1rem 5%;
-  background: #fdf6e3;
-  border-bottom: 1px solid #d97706;
+  background: #fefce8;
+  border-bottom: 1px dashed #facc15;
 }
 
 .logo {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--primary);
   font-style: italic;
@@ -27,6 +27,91 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1.6rem;
 }
 
+.nav-links a {
+  text-decoration: none;
+  color: #57534e;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.hero {
+  padding: 8rem 5% 5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #fefce8 0%, #fef3f2 50%, #f5f3ff 100%);
+  color: #333;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  margin-bottom: 1.6rem;
+  color: #57534e;
+}
+
+.cta-button {
+  padding: 0.9rem 2.2rem;
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
+  display: inline-block;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.features {
+  padding: 4.5rem 5%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
+  color: var(--primary);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.feature-card {
+  padding: 1.8rem;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #facc15;
+  box-shadow: 0 2px 8px rgba(251, 191, 36, 0.1);
+}
+
+.feature-card i {
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 0.9rem;
+}
+
+footer {
+  background: #fdf6e3;
+  color: #57534e;
+  text-align: center;
+  padding: 2rem 5%;
+  margin-top: 3rem;
+}
