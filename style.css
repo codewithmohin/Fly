@@ -1,7 +1,7 @@
 :root {
-  --primary: #1f2937;
-  --bg: #ffffff;
-  --text: #374151;
+  --primary: #f97316; /* amber */
+  --bg: #0f172a;
+  --text: #e2e8f0;
 }
 
 body {
@@ -13,13 +13,13 @@ body {
 
 header {
   padding: 1rem 5%;
-  background: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background: rgba(15, 23, 42, 0.95);
+  border-bottom: 1px solid #334155;
 }
 
 .logo {
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--primary);
 }
 
@@ -31,46 +31,46 @@ header {
 
 .nav-links a {
   text-decoration: none;
-  color: #4b5563;
-  font-weight: 500;
+  color: #cbd5e1;
+  font-weight: 400;
 }
 
 .nav-links a:hover {
-  color: #0f172a;
+  color: var(--primary);
 }
 
 .hero {
-  padding: 7rem 5% 5rem;
+  padding: 8rem 5% 5rem;
   text-align: center;
-  background: #f8fafc;
-  color: #111827;
+  background: #0f172a;
+  color: #ffffff;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0.8rem;
 }
 
 .hero p {
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #4b5563;
+  margin-bottom: 1.4rem;
+  color: #cbd5e1;
 }
 
 .cta-button {
-  padding: 0.9rem 2rem;
+  padding: 0.9rem 2.2rem;
   background: var(--primary);
   color: #ffffff;
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
   border: none;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
   display: inline-block;
 }
 
 .cta-button:hover {
-  background: #0f172a;
   transform: translateY(-2px);
 }
 
@@ -82,35 +82,36 @@ header {
 
 .features h2 {
   text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  margin-bottom: 2.2rem;
   color: var(--primary);
 }
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 1.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
 }
 
 .feature-card {
-  padding: 1.7rem;
-  background: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #d1d5db;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  padding: 1.8rem;
+  background: rgba(22, 34, 58, 0.7);
+  border-radius: 12px;
+  border: 1px solid #334155;
+  box-shadow: 0 2px 8px rgba(249, 115, 22, 0.15);
 }
 
 .feature-card i {
-  font-size: 2.2rem;
-  color: #6b7280;
-  margin-bottom: 0.8rem;
+  font-size: 2.4rem;
+  color: var(--primary);
+  margin-bottom: 0.9rem;
 }
 
 footer {
-  background: #f1f5f9;
-  color: #6b7280;
+  background: #0f172a;
+  color: #94a3b8;
   text-align: center;
-  padding: 1.8rem 5%;
+  padding: 2rem 5%;
   margin-top: 3rem;
+  border-top: 1px solid #334155;
 }
