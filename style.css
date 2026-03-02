@@ -1,5 +1,5 @@
-:root { --primary: #15803d; --bg: #f0fdf4; --text: #047857; }
+:root { --primary: #000000; --bg: #ffffff; --text: #000000; }
 body { background: var(--bg); color: var(--text); font-family: sans-serif; }
-header { background: #dcfce7; border-bottom: 1px solid #15803d; }
+header { background: #ffffff; border-bottom: 3px solid #000000; }
 .logo { color: var(--primary); }
-.cta-button { background: var(--primary); color: white; }
+.cta-button { background: #000000; color: white; }
