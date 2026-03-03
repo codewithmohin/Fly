@@ -1,3 +1,3 @@
-let name = "mohin";
-let cap = name.charAt(0).toUpperCase() + name.slice(1);
-console.log(cap);
+let fib=[0,1];
+for(let i=2;i<6;i++) fib[i]=fib[i-1]+fib[i-2];
+console.log(fib);
