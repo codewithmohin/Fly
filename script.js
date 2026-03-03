@@ -1,2 +1,3 @@
-let arr = [3, 9, 2, 15, 6];
-console.log(Math.max(...arr));
+let nums = [1, 2, 2, 3, 4, 4];
+let unique = [...new Set(nums)];
+console.log(unique);
