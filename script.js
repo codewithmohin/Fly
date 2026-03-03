@@ -1,3 +1,2 @@
-let text = "javascript";
-let count = text.match(/[aeiou]/gi)?.length || 0;
-console.log(count);
+let pass = Math.random().toString(36).slice(-8);
+console.log(pass);
