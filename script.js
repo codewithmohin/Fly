@@ -1,3 +1,3 @@
- let x = 5;
-x *= 2;
-console.log(x);
+let str = "Mohin";
+let reversed = str.split("").reverse().join("");
+console.log(reversed);
