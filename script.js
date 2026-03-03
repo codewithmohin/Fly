@@ -1,3 +1,3 @@
-let nums = [1, 2, 2, 3, 4, 4];
-let unique = [...new Set(nums)];
-console.log(unique);
+let text = "javascript";
+let count = text.match(/[aeiou]/gi)?.length || 0;
+console.log(count);
