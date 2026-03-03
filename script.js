@@ -1,3 +1,2 @@
-let n = 17;
-let prime = n > 1 && [...Array(n).keys()].slice(2).every(i => n % i !== 0);
-console.log(prime);
+let arr = [3, 9, 2, 15, 6];
+console.log(Math.max(...arr));
