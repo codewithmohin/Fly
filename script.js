@@ -1,3 +1,3 @@
-const key = 'score';
-const player = { name: 'Mohin', [key]: 95 };
-console.log(player.score);  // 95
+const isActive = true;
+const message = isActive && 'User online';  // 'User online'
+const safeValue = null || 'Default';  // 'Default'
