@@ -1,10 +1,3 @@
-class BankAccount {
-  #balance = 0;
-  deposit(amount) {
-    this.#balance += amount;
-  }
-  getBalance() { return this.#balance; }
-}
-const acc = new BankAccount();
-acc.deposit(100);
-console.log(acc.getBalance());  // 100 (can't access #balance directly)
+const nums = [3, 1, 2];
+const sorted = nums.toSorted((a, b) => a - b);  // [1, 2, 3], nums unchanged
+const reversed = nums.toReversed();  // [2, 1, 3], nums unchanged
