@@ -1,3 +1,4 @@
-const users = [{name: 'Mohin', city: 'Mysuru'}, {name: 'Alice', city: 'Mysuru'}];
-const byCity = users.groupBy(u => u.city);
-console.log(byCity.Mysuru);  // [{name: 'Mohin', city: 'Mysuru'}, {name: 'Alice', city: 'Mysuru'}]
+// In a .mjs file or <script type="module">
+const data = await fetch('https://api.example.com/users');
+const users = await data.json();
+console.log(users);
