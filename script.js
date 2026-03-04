@@ -1,3 +1,3 @@
-const promises = [Promise.resolve(1), Promise.reject('err'), Promise.resolve(3)];
-Promise.allSettled(promises).then(results => 
-  console.log(results.map(r => r.status)));  // ['fulfilled', 'rejected', 'fulfilled']
+const users = [{name: 'Mohin', city: 'Mysuru'}, {name: 'Alice', city: 'Mysuru'}];
+const byCity = users.groupBy(u => u.city);
+console.log(byCity.Mysuru);  // [{name: 'Mohin', city: 'Mysuru'}, {name: 'Alice', city: 'Mysuru'}]
