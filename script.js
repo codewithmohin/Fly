@@ -1,3 +1,3 @@
-const users = [{id:1}, {id:2}];
-const index = users.findIndex(u => u.id === 2);
-console.log(index);  // 1
+const promises = [Promise.resolve(1), Promise.reject('err'), Promise.resolve(3)];
+Promise.allSettled(promises).then(results => 
+  console.log(results.map(r => r.status)));  // ['fulfilled', 'rejected', 'fulfilled']
