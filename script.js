@@ -1,3 +1,3 @@
-const add = a => b => a + b;
-const addFive = add(5);
-console.log(addFive(3));  // 8
+ const nested = [1, [2, [3]]];
+const flat = nested.flat(Infinity);
+console.log(flat);  // [1, 2, 3]
