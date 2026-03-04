@@ -1,3 +1,2 @@
-console.log(typeof []);  // 'object'
-console.log(typeof null);  // 'object' (legacy bug)
-console.log([] + []);  // '' (empty strings)
+console.log(/a/ + /b/);  // '/ab/'
+console.log(/a/g + /b/i);  // '/ag/bi'
