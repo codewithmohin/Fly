@@ -1,7 +1,6 @@
-const privateData = new WeakMap();
-class Secret {
-  constructor() {
-    privateData.set(this, { hidden: 42 });
+outer: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    if (i === 1 && j === 1) break outer;
+    console.log(i, j);
   }
-  getHidden() { return privateData.get(this).hidden; }
-}
+}  // Stops at 1,1
