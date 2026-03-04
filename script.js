@@ -1,3 +1,3 @@
-const person = { firstName: 'Mohin', lastName: 'Nadaf' };
-const { firstName: fn, lastName: ln } = person;
-console.log(fn, ln);  // Mohin Nadaf
+const key = 'score';
+const player = { name: 'Mohin', [key]: 95 };
+console.log(player.score);  // 95
