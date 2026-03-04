@@ -1,3 +1,4 @@
-const arr = ['a', 'b', 'c'];
-console.log(arr.at(-1));  // 'c'
-console.log(arr[-1]);  // undefined (not supported)
+const obj = { prop: 42 };
+Object.prototype.protoProp = 99;
+console.log(Object.hasOwn(obj, 'prop'));  // true
+console.log(obj.hasOwnProperty('protoProp'));  // false (but prototype issue)
