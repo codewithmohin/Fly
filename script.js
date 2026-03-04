@@ -1,4 +1,3 @@
-const defaults = { theme: 'light', lang: 'en' };
-const userPrefs = { theme: 'dark' };
-const config = { ...defaults, ...userPrefs };
-console.log(config.theme);  // 'dark'
+const add = a => b => a + b;
+const addFive = add(5);
+console.log(addFive(3));  // 8
