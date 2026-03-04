@@ -1,3 +1,2 @@
-let word="madam";
-let isPal=word===word.split("").reverse().join("");
-console.log(isPal);
+const user = { profile: { name: 'Mohin' } };
+const name = user.profile?.name ?? 'Guest';  // 'Mohin'
