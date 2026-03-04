@@ -1,3 +1,3 @@
- const nested = [1, [2, [3]]];
-const flat = nested.flat(Infinity);
-console.log(flat);  // [1, 2, 3]
+const users = [{id:1}, {id:2}];
+const index = users.findIndex(u => u.id === 2);
+console.log(index);  // 1
