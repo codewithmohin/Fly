@@ -1,2 +1,1 @@
-const shuffle = a => a.sort(()=>Math.random()-0.5);
-console.log(shuffle([1,2,3,4,5]));
+const debounce = (f,d)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>f(...a),d)}};
