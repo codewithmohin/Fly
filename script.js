@@ -1,2 +1,2 @@
-const count = s => [...s].reduce((a,c)=>({...a,[c]:(a[c]||0)+1}),{});
-console.log(count("javascript"));
+const shuffle = a => a.sort(()=>Math.random()-0.5);
+console.log(shuffle([1,2,3,4,5]));
