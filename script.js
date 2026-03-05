@@ -1,2 +1,2 @@
-const palindrome = s => s === [...s].reverse().join('');
-console.log(palindrome("level"));
+const group = a => a.reduce((o,v)=>(o[v]=(o[v]||0)+1,o),{});
+console.log(group(["a","b","a","c","b","a"]));
