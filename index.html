@@ -1,61 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your App Landing Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<html>
 <body>
-    <!-- Header -->  
-     
-    <header>
-        <nav>
-            <div class="logo">YourApp</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div>
-            <h1>Build Amazing Things</h1>
-            <p>The fastest way to create beautiful, responsive websites with modern features.</p>
-            <a href="#features" class="cta-button">Get Started Free</a>
-        </div>
-    </section>
+<script>
+const balls=[]
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <h2>Why Choose Us</h2>
-        <div class="feature-grid">
-            <div class="feature-card">
-                <i>🚀</i>
-                <h3>Lightning Fast</h3>
-                <p>Optimized performance that loads instantly on any device.</p>
-            </div>
-            <div class="feature-card">
-                <i>📱</i>
-                <h3>Fully Responsive</h3>
-                <p>Perfect on desktop, tablet, and mobile devices.</p>
-            </div>
-            <div class="feature-card">
-                <i>⚡</i>
-                <h3>Easy to Use</h3>
-                <p>No coding required. Drag, drop, and publish.</p>
-            </div>
-        </div>
-    </section>
+for(let i=0;i<10;i++){
+let b=document.createElement("div")
+b.style.width="40px"
+b.style.height="40px"
+b.style.borderRadius="50%"
+b.style.position="fixed"
+b.style.background=`hsl(${Math.random()*360},80%,60%)`
+b.style.left=Math.random()*window.innerWidth+"px"
+b.style.top=Math.random()*window.innerHeight+"px"
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 YourApp. Made with ❤️ for developers.</p>
-    </footer>
-    <script src="script.js"></script>
+document.body.appendChild(b)
+
+balls.push({
+el:b,
+x:Math.random()*window.innerWidth,
+y:Math.random()*window.innerHeight,
+dx:(Math.random()*4)+1,
+dy:(Math.random()*4)+1
+})
+}
+
+function animate(){
+balls.forEach(ball=>{
+ball.x+=ball.dx
+ball.y+=ball.dy
+
+if(ball.x>window.innerWidth-40||ball.x<0)ball.dx*=-1
+if(ball.y>window.innerHeight-40||ball.y<0)ball.dy*=-1
+
+ball.el.style.left=ball.x+"px"
+ball.el.style.top=ball.y+"px"
+})
+
+requestAnimationFrame(animate)
+}
+
+animate()
+</script>
+
 </body>
 </html>
