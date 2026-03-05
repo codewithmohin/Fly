@@ -1,2 +1,2 @@
-const unique = a => [...new Set(a)];
-console.log(unique([1,2,2,3,4,4,5]));
+const flatten = a => a.flat(Infinity);
+console.log(flatten([1,[2,[3,4],5]]));
