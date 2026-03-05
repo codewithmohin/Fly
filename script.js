@@ -1,1 +1,2 @@
-const debounce = (f,d)=>{let t;return(...a)=>{clearTimeout(t);t=setTimeout(()=>f(...a),d)}};
+const palindrome = s => s === [...s].reverse().join('');
+console.log(palindrome("level"));
