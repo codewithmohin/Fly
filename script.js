@@ -1,4 +1,3 @@
-function fact(n){
-return n<=1?1:n*fact(n-1)
+for(let i=0;i<10;i++){
+console.log(Math.floor(Math.random()*100))
 }
-console.log(fact(6))
