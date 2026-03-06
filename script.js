@@ -1,4 +1,4 @@
-function gcd(a,b){
-return b==0?a:gcd(b,a%b)
+function lcm(a,b){
+return (a*b)/gcd(a,b)
 }
-console.log(gcd(48,18))
+console.log(lcm(12,18))
