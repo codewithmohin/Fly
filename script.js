@@ -1,7 +1,8 @@
-function digitalRoot(n){
-while(n>9){
-n=[...n.toString()].reduce((a,b)=>a+ +b,0)
+function fib(n){
+let a=0,b=1
+for(let i=0;i<n;i++){
+console.log(a)
+;[a,b]=[b,a+b]
 }
-return n
 }
-console.log(digitalRoot(9876))
+fib(10)
