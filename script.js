@@ -1,7 +1,7 @@
-function armstrong(n){
-let s=n.toString()
-let sum=0
-for(let d of s) sum+=Math.pow(d,s.length)
-return sum==n
+function digitalRoot(n){
+while(n>9){
+n=[...n.toString()].reduce((a,b)=>a+ +b,0)
 }
-console.log(armstrong(153))
+return n
+}
+console.log(digitalRoot(9876))
