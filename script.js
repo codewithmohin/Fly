@@ -1,8 +1,4 @@
-function password(len){
-let c="abcdefghijklmnopqrstuvwxyz0123456789"
-let p=""
-for(let i=0;i<len;i++)
-p+=c[Math.floor(Math.random()*c.length)]
-return p
+function gcd(a,b){
+return b==0?a:gcd(b,a%b)
 }
-console.log(password(8))
+console.log(gcd(48,18))
