@@ -1,6 +1,8 @@
-function perfect(n){
-let sum=0
-for(let i=1;i<n;i++) if(n%i===0) sum+=i
-return sum===n
+function password(len){
+let c="abcdefghijklmnopqrstuvwxyz0123456789"
+let p=""
+for(let i=0;i<len;i++)
+p+=c[Math.floor(Math.random()*c.length)]
+return p
 }
-console.log(perfect(28))
+console.log(password(8))
