@@ -1,2 +1,5 @@
-let n=Math.floor(Math.random()*10)+1
-console.log("Guess number:",n)
+let sum=0
+for(let i=1;i<=10;i++){
+sum+=i
+console.log(sum)
+}
