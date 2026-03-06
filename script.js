@@ -1,3 +1,4 @@
-for(let i=1;i<=5;i++){
-console.log(String(i).repeat(i))
+function toBinary(n){
+return n.toString(2)
 }
+console.log(toBinary(25))
