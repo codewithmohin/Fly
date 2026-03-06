@@ -1,4 +1,6 @@
-function digitSum(n){
-return [...n.toString()].reduce((a,b)=>a+ +b,0)
+function perfect(n){
+let sum=0
+for(let i=1;i<n;i++) if(n%i===0) sum+=i
+return sum===n
 }
-console.log(digitSum(12345))
+console.log(perfect(28))
