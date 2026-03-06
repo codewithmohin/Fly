@@ -1,4 +1,4 @@
-function toBinary(n){
-return n.toString(2)
+function digitSum(n){
+return [...n.toString()].reduce((a,b)=>a+ +b,0)
 }
-console.log(toBinary(25))
+console.log(digitSum(12345))
