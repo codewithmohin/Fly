@@ -1,8 +1,6 @@
-function fib(n){
-let a=0,b=1
-for(let i=0;i<n;i++){
-console.log(a)
-;[a,b]=[b,a+b]
+function isPrime(n){
+for(let i=2;i<=Math.sqrt(n);i++)
+if(n%i===0)return false
+return n>1
 }
-}
-fib(10)
+console.log(isPrime(17))
