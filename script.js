@@ -1,5 +1,5 @@
-function reverseMagic(n){
-let r=parseInt(String(n).split('').reverse().join(''))
-return n+r
+function palindrome(n){
+let s=n.toString()
+return s===s.split('').reverse().join('')
 }
-console.log(reverseMagic(123))
+console.log(palindrome(121))
