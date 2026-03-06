@@ -1,4 +1,2 @@
-function lcm(a,b){
-return (a*b)/gcd(a,b)
-}
-console.log(lcm(12,18))
+let n=Math.floor(Math.random()*10)+1
+console.log("Guess number:",n)
