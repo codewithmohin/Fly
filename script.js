@@ -1,4 +1,5 @@
-let str = "JS";
-for (let char of str) {
-    console.log(char + char);
-}
+var arr = [1,2,3,4,5,6,7,8,9,10];
+
+var mohin = [...new Set(arr)];
+
+console.log(mohin);
