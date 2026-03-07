@@ -1,7 +1,3 @@
-var arr = [1,2,3,4,5,6,7,8,9,10];
-
-var mohin = [...new Set(arr)];
-
-console.log(mohin.sort(function (a,b) {
-    return b * a;
-})[1]);
+int x = 3;
+System.out.println(x--);
+System.out.println(x);
