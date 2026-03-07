@@ -1,6 +1,4 @@
-function kaprekar(n){
-let s=n*n+""
-let mid=Math.floor(s.length/2)
-return Number(s.slice(0,mid))+Number(s.slice(mid))==n
+let str = "JS";
+for (let char of str) {
+    console.log(char + char);
 }
-console.log(kaprekar(45))
