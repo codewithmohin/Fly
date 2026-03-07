@@ -1,3 +1,3 @@
-int x = 3;
-System.out.println(x--);
-System.out.println(x);
+let numbers = [5, 10, 1, 25];
+numbers.sort();
+console.log(numbers);
