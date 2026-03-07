@@ -1,3 +1,3 @@
-let numbers = [5, 10, 1, 25];
-numbers.sort();
-console.log(numbers);
+let arr = [1, 2, 2, 3, 4, 4, 5];
+let uniqueArr = [...new Set(arr)];
+console.log(uniqueArr);
