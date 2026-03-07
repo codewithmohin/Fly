@@ -1,3 +1,11 @@
-let arr = [1, 2, 2, 3, 4, 4, 5];
-let uniqueArr = [...new Set(arr)];
-console.log(uniqueArr);
+let x = 50;
+
+if (x <= 50) {
+    if (x === 50) {
+        console.log("x is 50");
+    } else {
+        console.log("x is less than 50");
+    }
+} else {
+    console.log("x is greater than 50");
+}
