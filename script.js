@@ -1,5 +1,9 @@
-function createGreeter(greeting) {
-  return function(name) {
-    return greeting + " " + name
+function once(callback){
+  let called=false
+  return function(...args){
+    if(!called){
+      called=true
+      return callback(...args)
+    }
   }
 }
