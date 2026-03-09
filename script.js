@@ -1,9 +1,10 @@
-function once(callback){
-  let called=false
-  return function(...args){
-    if(!called){
-      called=true
-      return callback(...args)
+function throttle(fn, delay) {
+  let last = 0
+  return function(...args) {
+    const now = Date.now()
+    if (now - last >= delay) {
+      last = now
+      return fn.apply(this, args)
     }
   }
 }
