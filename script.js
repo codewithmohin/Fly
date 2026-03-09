@@ -1,5 +1,4 @@
-var h1 = document.querySelector("h1");
-
-h1.addEventListener("mouseleave", function () {
-    h1.style.color = "black";
+document.addEventListener("keydown", function () {
+    var h1 = document.querySelector("h1");
+    h1.innerHTML = "Key Pressed!";
 });
