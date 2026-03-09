@@ -1,3 +1,5 @@
-function repeatEvery(callback, n) {
-  setInterval(callback, n * 1000)
+function createGreeter(greeting) {
+  return function(name) {
+    return greeting + " " + name
+  }
 }
