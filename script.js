@@ -1,2 +1,2 @@
-// 17. Random number 1-100
-console.log(Math.floor(Math.random()*100)+1);[web:9]
+// 18. Power function: 2^8
+console.log(Math.pow(2,8)); // 256[web:12]
