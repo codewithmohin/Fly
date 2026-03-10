@@ -1,2 +1,2 @@
-// 13. Sum array elements
-const nums=[1,2,3,4]; let total=nums.reduce((acc,val)=>acc+val,0); console.log(total); // 10[web:8]
+// 14. Filter numbers > 5
+const bigNums=[2,6,3,8,1].filter(n=>n>5); console.log(bigNums); // [6,8][web:8]
