@@ -1,2 +1,2 @@
-// 2. Print odd numbers under 50
-for(let i=1; i<50; i+=2) console.log(i);[web:10]
+// 3. Print even numbers 0 to 20
+for(let i=0; i<=20; i+=2) console.log(i);[web:16]
