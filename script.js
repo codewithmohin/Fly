@@ -1,2 +1,3 @@
-// 30. Generate multiples of 7 up to 100
-Array.from({length:Math.floor(100/7)},(_,i)=>7*(i+1)); // [7,14,...,98][web:8]
+// 31. Print multiplication table of 5
+for(let i=1; i<=10; i++) console.log(`5 x ${i} = ${5*i}`);
+// Output: 5 x 1 = 5 ... 5 x 10 = 50[web:10]
