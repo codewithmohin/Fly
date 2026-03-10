@@ -1,7 +1,9 @@
-// 46. Neon number (square digits sum = original)
-function isNeon(n){
-  let sq = n*n, sum=0;
-  while(sq>0){sum += sq%10; sq=Math.floor(sq/10);}
-  console.log(sum===n ? `${n} is Neon` : 'Not');
+// 47. Spicy number (product digits > sum digits)
+function spicyCheck(n){
+  let sum=0, prod=1, num=n;
+  while(num>0){
+    let d=num%10; sum+=d; prod*=d; num=Math.floor(num/10);
+  }
+  console.log(prod > sum ? `${n} is spicy` : 'Not');
 }
-isNeon(9); // 9 is Neon[web:11]
+spicyCheck(24); // 24 is spicy[web:11]
