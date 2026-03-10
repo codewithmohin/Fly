@@ -1,2 +1,2 @@
-// 25. Swap two numbers without temp
-let x=5,y=10; [x,y]=[y,x]; console.log(x,y); // 10 5[web:11]
+// 26. Count digits
+function countDigits(n){return Math.floor(Math.log10(n))+1;} console.log(countDigits(1234)); // 4[web:11]
