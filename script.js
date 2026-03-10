@@ -1,2 +1,2 @@
-// 29. Binary to decimal
-console.log(parseInt('1010',2)); // 10[web:12]
+// 30. Generate multiples of 7 up to 100
+Array.from({length:Math.floor(100/7)},(_,i)=>7*(i+1)); // [7,14,...,98][web:8]
