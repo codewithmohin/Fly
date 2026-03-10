@@ -1,2 +1,2 @@
-// 23. GCD of two numbers
-function gcd(a,b){return b===0?a:gcd(b,a%b);} console.log(gcd(48,18)); // 6[web:11]
+// 24. Armstrong number check (153)
+function isArmstrong(n){let sum=0,orig=n; while(n>0){let d=n%10; sum+=d**3; n=Math.floor(n/10);} return sum===orig;} console.log(isArmstrong(153)); // true[web:11]
