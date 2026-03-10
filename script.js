@@ -1,3 +1,7 @@
-// 31. Print multiplication table of 5
-for(let i=1; i<=10; i++) console.log(`5 x ${i} = ${5*i}`);
-// Output: 5 x 1 = 5 ... 5 x 10 = 50[web:10]
+// 32. Triangle number pattern (1 to 5 rows)
+for(let i=1; i<=5; i++){
+  let row = '';
+  for(let j=1; j<=i; j++) row += `${j} `;
+  console.log(row);
+}
+// Output: 1 \n 1 2 \n 1 2 3 etc.[web:16]
