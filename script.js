@@ -1,2 +1,2 @@
-// 28. Factorial recursive
-function factRec(n){return n<=1?n: n*factRec(n-1);} console.log(factRec(6)); // 720[web:10]
+// 29. Binary to decimal
+console.log(parseInt('1010',2)); // 10[web:12]
