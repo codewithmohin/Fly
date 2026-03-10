@@ -1,2 +1,5 @@
-// 42. Floor, ceil, round demo
-console.log(Math.floor(4.7), Math.ceil(4.2), Math.round(4.5)); // 4 5 5[web:12]
+// 43. Recursive sum 1 to n
+function recSum(n){
+  return n<=0 ? 0 : n + recSum(n-1);
+}
+console.log(recSum(10)); // 55[web:10]
