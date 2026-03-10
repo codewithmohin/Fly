@@ -1,2 +1,2 @@
-// 18. Power function: 2^8
-console.log(Math.pow(2,8)); // 256[web:12]
+// 19. Round to 2 decimals
+console.log((5.1234).toFixed(2)); // "5.12"[web:12]
