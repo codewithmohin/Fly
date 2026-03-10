@@ -1,2 +1,2 @@
-// 27. Palindrome number
-function isNumPalindrome(n){return n.toString()===n.toString().split('').reverse().join('');} console.log(isNumPalindrome(121)); // true[web:6]
+// 28. Factorial recursive
+function factRec(n){return n<=1?n: n*factRec(n-1);} console.log(factRec(6)); // 720[web:10]
