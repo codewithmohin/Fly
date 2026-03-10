@@ -1,5 +1,2 @@
-// 40. Decimal to binary
-function decToBin(n){
-  console.log(n.toString(2));
-}
-decToBin(13); // 1101[web:12]
+// 42. Floor, ceil, round demo
+console.log(Math.floor(4.7), Math.ceil(4.2), Math.round(4.5)); // 4 5 5[web:12]
