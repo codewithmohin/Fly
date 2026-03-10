@@ -1,5 +1,6 @@
-// 43. Recursive sum 1 to n
-function recSum(n){
-  return n<=0 ? 0 : n + recSum(n-1);
+// 44. Nth Fibonacci
+function fib(n){
+  if(n<=1) return n;
+  return fib(n-1)+fib(n-2);
 }
-console.log(recSum(10)); // 55[web:10]
+console.log(fib(8)); // 21[web:11]
