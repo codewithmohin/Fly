@@ -1,11 +1,6 @@
-// 36. Disarium number (powers of digits equal number)
-function isDisarium(n){
-  let sum=0, pos=1, num=n;
-  while(num>0){
-    let digit = num%10;
-    sum += digit**pos;
-    pos++; num=Math.floor(num/10);
-  }
-  console.log(sum===n ? `${n} is Disarium` : 'Not');
+// 49. HCF array
+function hcfArr(arr){
+  return arr.reduce((acc,val)=>gcd(acc,val));
 }
-isDisarium(89); // 89 is Disarium[web:11]
+function gcd(a,b){return b?gcd(b,a%b):a;}
+console.log(hcfArr([12,18,24])); // 6[web:11]
