@@ -1,2 +1,2 @@
-// 5. Calculate 5!
-let fact=1; for(let i=1; i<=5; i++) fact*=i; console.log(fact); // 120[web:10]
+// 6. Average of [10,20,30,40]
+const arr=[10,20,30,40]; console.log(arr.reduce((a,b)=>a+b)/arr.length); // 25[web:8]
