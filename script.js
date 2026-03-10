@@ -1,2 +1,2 @@
-// 15. Array reverse without reverse()
-function revArr(arr) { return arr.reduce((a,v)=>[v,...a],[]); } console.log(revArr([1,2,3])); // [3,2,1][web:8]
+// 16. Square root to int
+function sqrtToInt(n) { return Math.floor(Math.sqrt(n)); } console.log(sqrtToInt(17)); // 4[web:11]
