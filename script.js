@@ -1,2 +1,2 @@
-// 10. Celsius to Fahrenheit
-function cToF(c) { return (c*9/5)+32; } console.log(cToF(25)); // 77[web:9]
+// 11. Km to miles
+function kmToMiles(km) { return km*0.621371; } console.log(kmToMiles(10)); // 6.21[web:9]
