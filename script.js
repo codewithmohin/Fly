@@ -1,2 +1,2 @@
-// 21. Fibonacci up to 10th
-let a=0,b=1; console.log(a,b); for(let i=2;i<10;i++){let next=a+b; console.log(next); a=b; b=next;}[web:11]
+// 22. Prime check
+function isPrime(n){for(let i=2;i<n;i++)if(n%i===0)return false;return true;} console.log(isPrime(11)); // true[web:11]
