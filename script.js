@@ -1,2 +1,2 @@
-// 8. Positive, negative, or zero
-function checkSign(n) { return n>0 ? 'Positive' : n<0 ? 'Negative' : 'Zero'; } console.log(checkSign(-5));[web:9]
+// 9. Largest of three numbers
+const maxOfThree = (a,b,c) => Math.max(a,b,c); console.log(maxOfThree(5,12,8)); // 12[web:9]
