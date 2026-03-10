@@ -1,2 +1,2 @@
-// 6. Average of [10,20,30,40]
-const arr=[10,20,30,40]; console.log(arr.reduce((a,b)=>a+b)/arr.length); // 25[web:8]
+// 7. Check if even or odd
+function isEven(n) { return n%2===0 ? 'Even' : 'Odd'; } console.log(isEven(7)); // Odd[web:9]
