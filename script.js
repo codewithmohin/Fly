@@ -1,2 +1,2 @@
-// 19. Round to 2 decimals
-console.log((5.1234).toFixed(2)); // "5.12"[web:12]
+// 20. Is integer?
+console.log(Number.isInteger(12.0)); // true[web:12]
