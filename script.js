@@ -1,7 +1,11 @@
-// 35. Harshad number (sum of digits divides number)
-function isHarshad(n){
-  let sum=0, num=n;
-  while(num>0){sum += num%10; num=Math.floor(num/10);}
-  console.log(n % sum === 0 ? `${n} is Harshad` : 'Not');
+// 36. Disarium number (powers of digits equal number)
+function isDisarium(n){
+  let sum=0, pos=1, num=n;
+  while(num>0){
+    let digit = num%10;
+    sum += digit**pos;
+    pos++; num=Math.floor(num/10);
+  }
+  console.log(sum===n ? `${n} is Disarium` : 'Not');
 }
-isHarshad(18); // 18 is Harshad[web:11]
+isDisarium(89); // 89 is Disarium[web:11]
