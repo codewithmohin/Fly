@@ -1,2 +1,2 @@
-// 9. Largest of three numbers
-const maxOfThree = (a,b,c) => Math.max(a,b,c); console.log(maxOfThree(5,12,8)); // 12[web:9]
+// 10. Celsius to Fahrenheit
+function cToF(c) { return (c*9/5)+32; } console.log(cToF(25)); // 77[web:9]
