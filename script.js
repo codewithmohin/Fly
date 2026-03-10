@@ -1,7 +1,4 @@
-// 32. Triangle number pattern (1 to 5 rows)
-for(let i=1; i<=5; i++){
-  let row = '';
-  for(let j=1; j<=i; j++) row += `${j} `;
-  console.log(row);
-}
-// Output: 1 \n 1 2 \n 1 2 3 etc.[web:16]
+// 33. Sum of squares 1-10
+let sqSum = 0;
+for(let i=1; i<=10; i++) sqSum += i*i;
+console.log(sqSum); // 385[web:11]
