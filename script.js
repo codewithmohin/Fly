@@ -1,2 +1,2 @@
-// 7. Check if even or odd
-function isEven(n) { return n%2===0 ? 'Even' : 'Odd'; } console.log(isEven(7)); // Odd[web:9]
+// 8. Positive, negative, or zero
+function checkSign(n) { return n>0 ? 'Positive' : n<0 ? 'Negative' : 'Zero'; } console.log(checkSign(-5));[web:9]
