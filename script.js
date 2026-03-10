@@ -1,2 +1,2 @@
-// 22. Prime check
-function isPrime(n){for(let i=2;i<n;i++)if(n%i===0)return false;return true;} console.log(isPrime(11)); // true[web:11]
+// 23. GCD of two numbers
+function gcd(a,b){return b===0?a:gcd(b,a%b);} console.log(gcd(48,18)); // 6[web:11]
