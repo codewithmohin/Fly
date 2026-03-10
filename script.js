@@ -1,9 +1,8 @@
-// 47. Spicy number (product digits > sum digits)
-function spicyCheck(n){
-  let sum=0, prod=1, num=n;
-  while(num>0){
-    let d=num%10; sum+=d; prod*=d; num=Math.floor(num/10);
-  }
-  console.log(prod > sum ? `${n} is spicy` : 'Not');
+// 48. Count primes below 100 (simple)
+let primeCount=0;
+for(let i=2; i<100; i++){
+  let p=true;
+  for(let j=2; j<i; j++) if(i%j===0){p=false;break;}
+  if(p) primeCount++;
 }
-spicyCheck(24); // 24 is spicy[web:11]
+console.log(primeCount); // 25[web:11]
