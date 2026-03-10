@@ -1,4 +1,2 @@
-document.addEventListener("keydown", function () {
-    var h1 = document.querySelector("h1");
-    h1.innerHTML = "Key Pressed!";
-});
+// 1. Print numbers 1 to 10
+for(let i=1; i<=10; i++) console.log(i);[web:10]
