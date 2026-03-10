@@ -1,2 +1,2 @@
-// 14. Filter numbers > 5
-const bigNums=[2,6,3,8,1].filter(n=>n>5); console.log(bigNums); // [6,8][web:8]
+// 15. Array reverse without reverse()
+function revArr(arr) { return arr.reduce((a,v)=>[v,...a],[]); } console.log(revArr([1,2,3])); // [3,2,1][web:8]
