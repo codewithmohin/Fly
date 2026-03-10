@@ -1,6 +1,4 @@
-// 49. HCF array
-function hcfArr(arr){
-  return arr.reduce((acc,val)=>gcd(acc,val));
-}
-function gcd(a,b){return b?gcd(b,a%b):a;}
-console.log(hcfArr([12,18,24])); // 6[web:11]
+// 39. LCM of two numbers
+function lcm(a,b){return (a*b)/gcd(a,b);}
+function gcd(x,y){return y===0?x:gcd(y,x%y);}
+console.log(lcm(12,18)); // 36[web:11]
