@@ -1,2 +1,2 @@
-// 16. Square root to int
-function sqrtToInt(n) { return Math.floor(Math.sqrt(n)); } console.log(sqrtToInt(17)); // 4[web:11]
+// 17. Random number 1-100
+console.log(Math.floor(Math.random()*100)+1);[web:9]
