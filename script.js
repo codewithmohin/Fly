@@ -1,8 +1,7 @@
-// 45. Generate primes up to 20 (Sieve snippet)
-const primes = [];
-for(let i=2; i<=20; i++){
-  let isPrime=true;
-  for(let j=2; j<i; j++) if(i%j===0){isPrime=false; break;}
-  if(isPrime) primes.push(i);
+// 46. Neon number (square digits sum = original)
+function isNeon(n){
+  let sq = n*n, sum=0;
+  while(sq>0){sum += sq%10; sq=Math.floor(sq/10);}
+  console.log(sum===n ? `${n} is Neon` : 'Not');
 }
-console.log(primes); // [2,3,5,7,11,13,17,19][web:11]
+isNeon(9); // 9 is Neon[web:11]
