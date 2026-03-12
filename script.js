@@ -1,10 +1,13 @@
-function outer(){
-  let x = 10
+function counter(){
+  let count = 0
 
-  return function inner(){
-    console.log(x)
+  return function(){
+    count++
+    console.log(count)
   }
 }
 
-let f = outer()
-f()
+let c = counter()
+c()
+c()
+c()
