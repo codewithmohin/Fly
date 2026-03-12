@@ -1,13 +1,10 @@
-function counter(){
-  let count = 0
-
-  return function(){
-    count++
-    console.log(count)
-  }
+function greet(name, callback){
+  console.log("Hello " + name)
+  callback()
 }
 
-let c = counter()
-c()
-c()
-c()
+function done(){
+  console.log("Greeting completed")
+}
+
+greet("Rahul", done)
