@@ -1,12 +1,8 @@
-let inputs = document.querySelectorAll("input, textarea, select");
+let btn = document.querySelector("button");
 
-inputs.forEach(i=>{
-i.addEventListener("focus",()=>{
-i.style.boxShadow = "0 0 10px #2575fc";
-i.style.transition = "0.3s";
-});
-
-i.addEventListener("blur",()=>{
-i.style.boxShadow = "none";
-});
-});
+setInterval(()=>{
+btn.style.transform = "scale(1.1)";
+setTimeout(()=>{
+btn.style.transform = "scale(1)";
+},300);
+},2000);
