@@ -1,12 +1,12 @@
-let form = document.querySelector(".container");
+let inputs = document.querySelectorAll("input, textarea, select");
 
-form.style.transform = "translateY(-100px)";
-form.style.opacity = "0";
+inputs.forEach(i=>{
+i.addEventListener("focus",()=>{
+i.style.boxShadow = "0 0 10px #2575fc";
+i.style.transition = "0.3s";
+});
 
-window.onload = function(){
-setTimeout(()=>{
-form.style.transition = "1s";
-form.style.transform = "translateY(0)";
-form.style.opacity = "1";
-},200);
-}; 
+i.addEventListener("blur",()=>{
+i.style.boxShadow = "none";
+});
+});
