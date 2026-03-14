@@ -1,10 +1,13 @@
-function greet(name, callback){
-console.log("Hello " + name)
-callback()
-}
+gsap.from(".container",{
+y:-100,
+opacity:0,
+duration:1
+})
 
-function done(){
-console.log("Greeting completed")
-}
-
-greet("Rahul", done)
+gsap.from("input,select,textarea,button",{
+opacity:0,
+y:30,
+duration:1,
+stagger:0.1,
+delay:0.5
+})
