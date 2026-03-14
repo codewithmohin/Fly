@@ -1,13 +1,12 @@
-gsap.from(".container",{
-y:-100,
-opacity:0,
-duration:1
-})
+document.body.style.opacity = 0;
 
-gsap.from("input,select,textarea,button",{
-opacity:0,
-y:30,
-duration:1,
-stagger:0.1,
-delay:0.5
-})
+window.onload = function(){
+let op = 0;
+let fade = setInterval(function(){
+if(op >= 1){
+clearInterval(fade);
+}
+document.body.style.opacity = op;
+op += 0.05;
+},30);
+};
