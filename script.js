@@ -1,12 +1,12 @@
-document.body.style.opacity = 0;
+let form = document.querySelector(".container");
+
+form.style.transform = "translateY(-100px)";
+form.style.opacity = "0";
 
 window.onload = function(){
-let op = 0;
-let fade = setInterval(function(){
-if(op >= 1){
-clearInterval(fade);
-}
-document.body.style.opacity = op;
-op += 0.05;
-},30);
-};
+setTimeout(()=>{
+form.style.transition = "1s";
+form.style.transform = "translateY(0)";
+form.style.opacity = "1";
+},200);
+}; 
