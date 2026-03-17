@@ -1,7 +1,11 @@
-// 18. QR-like pattern generator
-function qrPattern(size=20) {
-  const pat = Array(size).fill().map(()=>Array(size).fill('.'));
-  for(let i=0;i<size;i+=4) for(let j=0;j<size;j+=4) pat[i][j]='█';
-  console.log(pat.map(row=>row.join('')).join('\n'));
+// 19. Cellular automaton (Game of Life step)
+function lifeStep(grid) {
+  const h=grid.length, w=grid[0].length, newGrid=grid.map(r=>r.slice());
+  for(let y=1;y<h-1;y++) for(let x=1;x<w-1;x++) {
+    let n=grid[y-1][x-1]+grid[y-1][x]+grid[y-1][x+1]+grid[y][x-1]+grid[y][x+1]+grid[y+1][x-1]+grid[y+1][x]+grid[y+1][x+1];
+    newGrid[y][x] = grid[y][x] ? (n===2||n===3?1:0) : (n===3?1:0);
+  }
+  return newGrid;
 }
-qrPattern();
+let g = [[0,0,0,0,0],[0,0,1,0,0],[0,0,0,1,0],[0,1,1,1,0],[0,0,0,0,0]];
+console.table(lifeStep(g));
