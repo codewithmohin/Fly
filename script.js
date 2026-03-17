@@ -1,14 +1,8 @@
-// 15. Mandelbrot ASCII (console art)
-function mandelbrot(w=40,h=20) {
-  for(let y=0;y<h;y++) {
-    let row='';
-    for(let x=0;x<w;x++) {
-      let a= x/w*3.5-2.5, b=y/h*2-1;
-      let ca=a, cb=b, n=0;
-      while(n<20) { let aa=ca*ca, bb=cb*cb; if(aa+bb>16) break; cb=2*ca*cb+ b; ca=aa-bb+a; n++; }
-      row += n>16 ? ' ':String.fromCharCode(64+n/4|0);
-    }
-    console.log(row);
-  }
+// 16. Maze generator snippet (binary tree, 10x10)
+function generateMaze(w=10,h=10) {
+  const maze = Array(h).fill().map(()=>Array(w).fill(1));
+  for(let y=0;y<h;y+=2) for(let x=0;x<w;x+=2) maze[y][x]=0;
+  // Simplified paths...
+  console.table(maze.map(row=>row.map(c=>c?'#':' ').join('')));
 }
-mandelbrot();
+generateMaze();
