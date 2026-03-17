@@ -1,3 +1,6 @@
-// 9. URL params to object
-const url = new URL('https://ex.com?a=1&b=2&c=3');
-console.log(Object.fromEntries(url.searchParams));
+// 10. Retry promise
+async function retry(fn, retries=3) {
+  for(let i=0; i<retries; i++) {
+    try { return await fn(); } catch(e) { if(i===retries-1) throw e; }
+  }
+}
