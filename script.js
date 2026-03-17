@@ -1,7 +1,9 @@
-// 5. Infinite Fibonacci generator
-function* fibGen() {
-  let a=0, b=1;
-  while(true) { yield a; [a,b] = [b, a+b]; }
+// 6. Prime generator up to n
+function* primesUpTo(n) {
+  const isPrime = []; let count=0;
+  for(let i=2; i<=n; i++) {
+    if(!isPrime[i]) { yield i; count++; }
+    for(let j=i*2; j<=n; j+=i) isPrime[j]=true;
+  }
 }
-const fib = fibGen();
-for(let i=0; i<10; i++) console.log(fib.next().value);
+console.log([...primesUpTo(50)]);
