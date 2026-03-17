@@ -1,6 +1,7 @@
-// 10. Retry promise
-async function retry(fn, retries=3) {
-  for(let i=0; i<retries; i++) {
-    try { return await fn(); } catch(e) { if(i===retries-1) throw e; }
-  }
+// 11. Typewriter effect (add <p id="type"></p>)
+function typeWrite(text, el=document.getElementById('type'), speed=50) {
+  let i=0;
+  function type() { if(i<text.length) { el.textContent += text[i++]; setTimeout(type,speed); } }
+  type();
 }
+typeWrite('Hello Unique JS!');
