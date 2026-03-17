@@ -1,9 +1,8 @@
-// 6. Prime generator up to n
-function* primesUpTo(n) {
-  const isPrime = []; let count=0;
-  for(let i=2; i<=n; i++) {
-    if(!isPrime[i]) { yield i; count++; }
-    for(let j=i*2; j<=n; j+=i) isPrime[j]=true;
-  }
+// 7. Password strength checker
+function strength(pass) {
+  let score = 0;
+  if(pass.length>8) score++; if(/[A-Z]/.test(pass)) score++;
+  if(/[0-9]/.test(pass)) score++; if(/[^a-zA-Z0-9]/.test(pass)) score++;
+  return ['Weak','Fair','Good','Strong'][score] || 'Weak';
 }
-console.log([...primesUpTo(50)]);
+console.log(strength('P@ssw0rd123'));
