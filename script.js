@@ -1,8 +1,8 @@
-// 7. Password strength checker
-function strength(pass) {
-  let score = 0;
-  if(pass.length>8) score++; if(/[A-Z]/.test(pass)) score++;
-  if(/[0-9]/.test(pass)) score++; if(/[^a-zA-Z0-9]/.test(pass)) score++;
-  return ['Weak','Fair','Good','Strong'][score] || 'Weak';
+// 8. JSON viewer tree (console)
+function tree(obj, prefix='') {
+  Object.entries(obj).forEach(([k,v]) => {
+    console.log(prefix + k + ':', typeof v==='object' ? '{...}' : v);
+    if(typeof v==='object') tree(v, prefix+'  ');
+  });
 }
-console.log(strength('P@ssw0rd123'));
+tree({a:1, b:{c:2, d:[3,4]}});
