@@ -1,6 +1,7 @@
-// 17. Music note sequencer (Web Audio API)
-const audioCtx = new (window.AudioContext||window.webkitAudioContext)();
-function playNote(freq,dur=0.5) {
-  const osc = audioCtx.createOscillator(); osc.frequency.value=freq; osc.connect(audioCtx.destination); osc.start(); setTimeout(()=>osc.stop(),dur*1000);
+// 18. QR-like pattern generator
+function qrPattern(size=20) {
+  const pat = Array(size).fill().map(()=>Array(size).fill('.'));
+  for(let i=0;i<size;i+=4) for(let j=0;j<size;j+=4) pat[i][j]='█';
+  console.log(pat.map(row=>row.join('')).join('\n'));
 }
-playNote(261.63); // C4
+qrPattern();
