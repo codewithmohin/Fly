@@ -1,12 +1,14 @@
-// 14. Emoji rain (add <div id="rain"></div>)
-function emojiRain() {
-  const emojis = ['🌟','🚀','💫','🔥','⚡'];
-  setInterval(() => {
-    const drop = document.createElement('div');
-    drop.textContent = emojis[Math.floor(Math.random()*5)];
-    drop.style.cssText = `position:fixed;left:${Math.random()*100}vw;top:-20px;font-size:20px;animation:drop 5s linear forwards`;
-    document.body.appendChild(drop);
-    setTimeout(()=>drop.remove(),5000);
-  },200);
+// 15. Mandelbrot ASCII (console art)
+function mandelbrot(w=40,h=20) {
+  for(let y=0;y<h;y++) {
+    let row='';
+    for(let x=0;x<w;x++) {
+      let a= x/w*3.5-2.5, b=y/h*2-1;
+      let ca=a, cb=b, n=0;
+      while(n<20) { let aa=ca*ca, bb=cb*cb; if(aa+bb>16) break; cb=2*ca*cb+ b; ca=aa-bb+a; n++; }
+      row += n>16 ? ' ':String.fromCharCode(64+n/4|0);
+    }
+    console.log(row);
+  }
 }
-const s = document.createElement('style'); s.textContent='@keyframes drop{to{transform:translateY(100vh) rotate(360deg);}}'; document.head.appendChild(s); emojiRain();
+mandelbrot();
