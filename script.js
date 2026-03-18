@@ -1,5 +1,3 @@
-function isPalindrome(str) {
-  const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
-  return cleaned === cleaned.split('').reverse().join('');
-}
-console.log(isPalindrome('A man a plan a canal Panama')); // true
+const user = { profile: { name: 'Mohin', age: 25 } };
+const { profile: { name = 'Guest', age = 0 } } = user;
+console.log(name, age); // Mohin 25
