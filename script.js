@@ -1,9 +1,10 @@
-let n = 5;
-let a = 0, b = 1;
+let str = "javascript";
+let count = 0;
 
-for (let i = 1; i <= n; i++) {
-  console.log(a);
-  let temp = a + b;
-  a = b;
-  b = temp;
+for (let char of str) {
+  if ("aeiou".includes(char)) {
+    count++;
+  }
 }
+
+console.log("Vowels:", count);
