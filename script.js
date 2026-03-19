@@ -1,10 +1,8 @@
-let str = "javascript";
-let count = 0;
+let str = "madam";
+let reversed = str.split("").reverse().join("");
 
-for (let char of str) {
-  if ("aeiou".includes(char)) {
-    count++;
-  }
+if (str === reversed) {
+  console.log("Palindrome");
+} else {
+  console.log("Not Palindrome");
 }
-
-console.log("Vowels:", count);
