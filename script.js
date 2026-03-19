@@ -1,11 +1,9 @@
-let num = 7;
-let isPrime = true;
+let n = 5;
+let a = 0, b = 1;
 
-for (let i = 2; i < num; i++) {
-  if (num % i === 0) {
-    isPrime = false;
-    break;
-  }
+for (let i = 1; i <= n; i++) {
+  console.log(a);
+  let temp = a + b;
+  a = b;
+  b = temp;
 }
-
-console.log(isPrime ? "Prime" : "Not Prime");
