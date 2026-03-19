@@ -1,6 +1,3 @@
-let num = 7;
-if (num % 2 === 0) {
-  console.log("Even");
-} else {
-  console.log("Odd");
-}
+let x = 10, y = 25, z = 15;
+let largest = Math.max(x, y, z);
+console.log("Largest:", largest);
