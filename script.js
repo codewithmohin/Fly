@@ -1,8 +1,11 @@
-let n = 5;
-let fact = 1;
+let num = 7;
+let isPrime = true;
 
-for (let i = 1; i <= n; i++) {
-  fact *= i;
+for (let i = 2; i < num; i++) {
+  if (num % i === 0) {
+    isPrime = false;
+    break;
+  }
 }
 
-console.log("Factorial:", fact);
+console.log(isPrime ? "Prime" : "Not Prime");
