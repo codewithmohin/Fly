@@ -1,3 +1,8 @@
-let str = "hello";
-let reversed = str.split("").reverse().join("");
-console.log(reversed);
+let n = 5;
+let fact = 1;
+
+for (let i = 1; i <= n; i++) {
+  fact *= i;
+}
+
+console.log("Factorial:", fact);
