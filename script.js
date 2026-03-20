@@ -1,11 +1,18 @@
-function chatbot(input) {
-    input = input.toLowerCase();
+async function generateText() {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer YOUR_API_KEY"
+        },
+        body: JSON.stringify({
+            model: "gpt-4o-mini",
+            messages: [{ role: "user", content: "Give a business idea" }]
+        })
+    });
 
-    if (input.includes("hello")) return "Hi there!";
-    if (input.includes("how are you")) return "I'm just code, but I'm doing great 😄";
-    if (input.includes("bye")) return "Goodbye!";
-    
-    return "I don't understand that yet...";
+    const data = await response.json();
+    console.log(data.choices[0].message.content);
 }
 
-console.log(chatbot("hello"));
+generateText();
