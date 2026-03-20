@@ -1,70 +1,35 @@
-Program Number 3
+Program Number 4
 <!DOCTYPE html>
 <html>
 <head>
-<title>Font Properties Demo</title>
+<title>Div and Span Example</title>
 
 <style>
-
 body{
-    background:#f2f2f2;
     font-family: Arial, sans-serif;
-    text-align:center;
+    background:#f5f5f5;
 }
 
-/* font-family */
-.font-family{
-    font-family: "Times New Roman", serif;
-    font-size:20px;
-}
-
-/* font-size */
-.font-size{
-    font-size:30px;
-}
-
-/* font-style */
-.font-style{
-    font-style: italic;
-}
-
-/* font-weight */
-.font-weight{
-    font-weight: bold;
-}
-
-/* font-variant */
-.font-variant{
-    font-variant: small-caps;
-}
-
-/* font shorthand */
-.font-shorthand{
-    font: italic bold 24px Georgia, serif;
-}
-
-/* text decoration */
-.text-decoration{
-    text-decoration: underline;
-}
-
-/* letter spacing */
-.letter-spacing{
-    letter-spacing:4px;
-}
-
-/* line height */
-.line-height{
-    line-height:2;
-}
-
-.box{
-    background:white;
+.container{
     width:70%;
-    margin:20px auto;
-    padding:15px;
-    border-radius:8px;
+    margin:40px auto;
+}
+
+.div-section{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-left:5px solid #4CAF50;
     box-shadow:0 0 5px gray;
+}
+
+.highlight{
+    color:red;
+    font-weight:bold;
+}
+
+.blue-text{
+    color:blue;
 }
 
 </style>
@@ -72,43 +37,37 @@ body{
 
 <body>
 
-<h1>My Personal Webpage - CSS Font Properties</h1>
+<div class="container">
 
-<div class="box font-family">
-Font Family Example (Times New Roman)
+<h1>Example of Div and Span Tags</h1>
+
+<div class="div-section">
+<h2>About HTML</h2>
+<p>
+HTML stands for <span class="highlight">HyperText Markup Language</span>.
+It is used to create and structure web pages. HTML uses different tags
+to display content like <span class="blue-text">text, images, links, and forms</span>.
+</p>
 </div>
 
-<div class="box font-size">
-Font Size Example (30px)
+<div class="div-section">
+<h2>About CSS</h2>
+<p>
+CSS stands for <span class="highlight">Cascading Style Sheets</span>.
+It is used to style HTML elements. With CSS we can change
+<span class="blue-text">colors, fonts, spacing, and layouts</span> of web pages.
+</p>
 </div>
 
-<div class="box font-style">
-Font Style Example (Italic Text)
+<div class="div-section">
+<h2>About JavaScript</h2>
+<p>
+<span class="highlight">JavaScript</span> is a programming language
+used to make websites interactive. It allows features like
+<span class="blue-text">animations, form validation, and dynamic content</span>.
+</p>
 </div>
 
-<div class="box font-weight">
-Font Weight Example (Bold Text)
-</div>
-
-<div class="box font-variant">
-Font Variant Example (Small Caps)
-</div>
-
-<div class="box font-shorthand">
-Font Shorthand Example
-</div>
-
-<div class="box text-decoration">
-Text Decoration Example (Underline)
-</div>
-
-<div class="box letter-spacing">
-Letter Spacing Example
-</div>
-
-<div class="box line-height">
-Line Height Example showing spacing between lines.
-This line shows how line-height works in CSS.
 </div>
 
 </body>
