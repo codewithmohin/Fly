@@ -1,11 +1,11 @@
-function autoReply(msg) {
-    const replies = {
-        "hi": "Hello 👋",
-        "price": "It costs ₹99/month",
-        "help": "How can I help you?"
-    };
+function generateStartupName() {
+    const words1 = ["AI", "Smart", "Auto", "Next"];
+    const words2 = ["Tech", "Flow", "Mind", "Bot"];
 
-    return replies[msg.toLowerCase()] || "Please ask something else";
+    let name = words1[Math.floor(Math.random() * words1.length)] +
+               words2[Math.floor(Math.random() * words2.length)];
+
+    return name;
 }
 
-console.log(autoReply("hi"));
+console.log(generateStartupName());
