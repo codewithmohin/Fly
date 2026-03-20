@@ -1,11 +1,7 @@
-function generateStartupName() {
-    const words1 = ["AI", "Smart", "Auto", "Next"];
-    const words2 = ["Tech", "Flow", "Mind", "Bot"];
-
-    let name = words1[Math.floor(Math.random() * words1.length)] +
-               words2[Math.floor(Math.random() * words2.length)];
-
-    return name;
+function recommend(user) {
+    if (user === "student") return ["Learn JS", "Practice DSA"];
+    if (user === "developer") return ["Build SaaS", "Learn AI"];
+    return ["Explore tech"];
 }
 
-console.log(generateStartupName());
+console.log(recommend("developer"));
