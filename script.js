@@ -1,7 +1,7 @@
-function recommend(user) {
-    if (user === "student") return ["Learn JS", "Practice DSA"];
-    if (user === "developer") return ["Build SaaS", "Learn AI"];
-    return ["Explore tech"];
+function isSpam(msg) {
+    const spamWords = ["win", "free", "money"];
+
+    return spamWords.some(word => msg.toLowerCase().includes(word));
 }
 
-console.log(recommend("developer"));
+console.log(isSpam("Win free money now"));
