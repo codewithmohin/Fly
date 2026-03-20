@@ -1,14 +1,32 @@
-function prioritizeTasks(tasks) {
-    return tasks.sort((a, b) => {
-        const priority = { high: 3, medium: 2, low: 1 };
-        return priority[b.priority] - priority[a.priority];
-    });
+function sendMessage() {
+    let input = document.getElementById("user-input");
+    let message = input.value.trim();
+    if (message === "") return;
+
+    addMessage(message, "user");
+
+    let reply = getAIResponse(message);
+    setTimeout(() => addMessage(reply, "bot"), 500);
+
+    input.value = "";
 }
 
-let tasks = [
-    { task: "Study AI", priority: "high" },
-    { task: "Watch YouTube", priority: "low" },
-    { task: "Build project", priority: "medium" }
-];
+function addMessage(text, sender) {
+    let chatBox = document.getElementById("chat-box");
+    let msg = document.createElement("div");
+    msg.className = "message " + sender;
+    msg.innerText = text;
+    chatBox.appendChild(msg);
+    chatBox.scrollTop = chatBox.scrollHeight;
+}
 
-console.log(prioritizeTasks(tasks));
+function getAIResponse(msg) {
+    msg = msg.toLowerCase();
+
+    if (msg.includes("hello")) return "Hi 👋 How can I help?";
+    if (msg.includes("ai")) return "AI is the future 🚀";
+    if (msg.includes("help")) return "I can chat with you!";
+    if (msg.includes("price")) return "This is free for now 😄";
+
+    return "I am still learning 🤖";
+}
