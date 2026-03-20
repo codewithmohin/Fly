@@ -1,8 +1,5 @@
-function suggestCode(input) {
-    if (input === "loop") return "for(let i=0;i<10;i++){}";
-    if (input === "function") return "function myFunc(){}";
-
-    return "No suggestion";
+function extractKeywords(text) {
+    return text.split(" ").filter(word => word.length > 4);
 }
 
-console.log(suggestCode("loop"));
+console.log(extractKeywords("AI is transforming the future of technology"));
