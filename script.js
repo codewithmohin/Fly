@@ -1,11 +1,8 @@
-function analyzeResume(text) {
-    let score = 0;
+function suggestCode(input) {
+    if (input === "loop") return "for(let i=0;i<10;i++){}";
+    if (input === "function") return "function myFunc(){}";
 
-    if (text.includes("JavaScript")) score++;
-    if (text.includes("React")) score++;
-    if (text.includes("Node")) score++;
-
-    return "Score: " + score + "/3";
+    return "No suggestion";
 }
 
-console.log(analyzeResume("I know JavaScript and React"));
+console.log(suggestCode("loop"));
