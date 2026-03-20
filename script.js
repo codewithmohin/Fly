@@ -1,8 +1,11 @@
-let str = "madam";
-let reversed = str.split("").reverse().join("");
+function chatbot(input) {
+    input = input.toLowerCase();
 
-if (str === reversed) {
-  console.log("Palindrome");
-} else {
-  console.log("Not Palindrome");
+    if (input.includes("hello")) return "Hi there!";
+    if (input.includes("how are you")) return "I'm just code, but I'm doing great 😄";
+    if (input.includes("bye")) return "Goodbye!";
+    
+    return "I don't understand that yet...";
 }
+
+console.log(chatbot("hello"));
