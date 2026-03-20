@@ -1,69 +1,115 @@
+Program Number 3
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Registration Form</title>
-<link rel="stylesheet" href="style.css">
+<title>Font Properties Demo</title>
 
-<!-- GSAP CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<style>
 
+body{
+    background:#f2f2f2;
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+
+/* font-family */
+.font-family{
+    font-family: "Times New Roman", serif;
+    font-size:20px;
+}
+
+/* font-size */
+.font-size{
+    font-size:30px;
+}
+
+/* font-style */
+.font-style{
+    font-style: italic;
+}
+
+/* font-weight */
+.font-weight{
+    font-weight: bold;
+}
+
+/* font-variant */
+.font-variant{
+    font-variant: small-caps;
+}
+
+/* font shorthand */
+.font-shorthand{
+    font: italic bold 24px Georgia, serif;
+}
+
+/* text decoration */
+.text-decoration{
+    text-decoration: underline;
+}
+
+/* letter spacing */
+.letter-spacing{
+    letter-spacing:4px;
+}
+
+/* line height */
+.line-height{
+    line-height:2;
+}
+
+.box{
+    background:white;
+    width:70%;
+    margin:20px auto;
+    padding:15px;
+    border-radius:8px;
+    box-shadow:0 0 5px gray;
+}
+
+</style>
 </head>
 
 <body>
 
-<div class="container">
-<h2>Student Registration Form</h2>
+<h1>My Personal Webpage - CSS Font Properties</h1>
 
-<form>
-
-<label>Full Name</label>
-<input type="text" placeholder="Enter your name">
-
-<label>Email</label>
-<input type="email" placeholder="Enter your email">
-
-<label>Password</label>
-<input type="password" placeholder="Enter password">
-
-<label>Phone Number</label>
-<input type="tel">
-
-<label>Date of Birth</label>
-<input type="date">
-
-<label>Gender</label><br>
-<input type="radio" name="gender"> Male
-<input type="radio" name="gender"> Female
-<input type="radio" name="gender"> Other
-<br><br>
-
-<label>Course</label>
-<select>
-<option>BCA</option>
-<option>BSc</option>
-<option>BBA</option>
-<option>BTech</option>
-</select>
-
-<label>Address</label>
-<textarea rows="3"></textarea>
-
-<label>Skills</label><br>
-<input type="checkbox"> HTML
-<input type="checkbox"> CSS
-<input type="checkbox"> JavaScript
-<br><br>
-
-<label>Upload Photo</label>
-<input type="file">
-
-<br><br>
-<button type="submit">Register</button>
-
-</form>
+<div class="box font-family">
+Font Family Example (Times New Roman)
 </div>
 
-<script src="script.js"></script>
+<div class="box font-size">
+Font Size Example (30px)
+</div>
+
+<div class="box font-style">
+Font Style Example (Italic Text)
+</div>
+
+<div class="box font-weight">
+Font Weight Example (Bold Text)
+</div>
+
+<div class="box font-variant">
+Font Variant Example (Small Caps)
+</div>
+
+<div class="box font-shorthand">
+Font Shorthand Example
+</div>
+
+<div class="box text-decoration">
+Text Decoration Example (Underline)
+</div>
+
+<div class="box letter-spacing">
+Letter Spacing Example
+</div>
+
+<div class="box line-height">
+Line Height Example showing spacing between lines.
+This line shows how line-height works in CSS.
+</div>
 
 </body>
 </html>
