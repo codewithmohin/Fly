@@ -1,9 +1,14 @@
-function summarize(text) {
-    let sentences = text.split(".");
-    
-    // return first 2 sentences as summary
-    return sentences.slice(0, 2).join(".") + ".";
+function prioritizeTasks(tasks) {
+    return tasks.sort((a, b) => {
+        const priority = { high: 3, medium: 2, low: 1 };
+        return priority[b.priority] - priority[a.priority];
+    });
 }
 
-let text = "AI is powerful. It is used in many fields. It helps automation.";
-console.log(summarize(text));
+let tasks = [
+    { task: "Study AI", priority: "high" },
+    { task: "Watch YouTube", priority: "low" },
+    { task: "Build project", priority: "medium" }
+];
+
+console.log(prioritizeTasks(tasks));
