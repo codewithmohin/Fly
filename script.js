@@ -1,5 +1,9 @@
-function extractKeywords(text) {
-    return text.split(" ").filter(word => word.length > 4);
+function summarize(text) {
+    let sentences = text.split(".");
+    
+    // return first 2 sentences as summary
+    return sentences.slice(0, 2).join(".") + ".";
 }
 
-console.log(extractKeywords("AI is transforming the future of technology"));
+let text = "AI is powerful. It is used in many fields. It helps automation.";
+console.log(summarize(text));
