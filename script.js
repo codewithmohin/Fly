@@ -1,7 +1,11 @@
-function isSpam(msg) {
-    const spamWords = ["win", "free", "money"];
+function analyzeResume(text) {
+    let score = 0;
 
-    return spamWords.some(word => msg.toLowerCase().includes(word));
+    if (text.includes("JavaScript")) score++;
+    if (text.includes("React")) score++;
+    if (text.includes("Node")) score++;
+
+    return "Score: " + score + "/3";
 }
 
-console.log(isSpam("Win free money now"));
+console.log(analyzeResume("I know JavaScript and React"));
