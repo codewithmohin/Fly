@@ -1,6 +1,5 @@
-html {
-    scroll-behavior: smooth;
-}
-#chat-box {
-    scroll-behavior: smooth;
+.timestamp {
+    font-size: 0.7em;
+    opacity: 0.6;
+    margin-top: 4px;
 }
