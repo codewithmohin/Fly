@@ -1,8 +1,12 @@
-#chat-box {
-    box-shadow: inset 0 0 20px rgba(56, 189, 248, 0.1);
-    animation: pulse 2s infinite;
+.typing {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #38bdf8;
+    border-radius: 50%;
+    animation: typing 1.4s infinite ease-in-out;
 }
-@keyframes pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.8; }
+@keyframes typing {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1); }
 }
