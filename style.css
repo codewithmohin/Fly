@@ -1,6 +1,4 @@
-h2 {
-    background: linear-gradient(45deg, #38bdf8, #22c55e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+#user-input:focus {
+    background: rgba(56, 189, 248, 0.1);
+    border-bottom: 2px solid #38bdf8;
 }
