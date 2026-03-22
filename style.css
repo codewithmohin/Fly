@@ -1,4 +1,6 @@
-#user-input:focus {
-    background: rgba(56, 189, 248, 0.1);
-    border-bottom: 2px solid #38bdf8;
+html {
+    scroll-behavior: smooth;
+}
+#chat-box {
+    scroll-behavior: smooth;
 }
