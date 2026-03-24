@@ -1,11 +1,14 @@
-function typeEffect(text, element) {
-    let i = 0;
-    function typing() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typing, 30);
-        }
-    }
-    typing();
+function sendMessage() {
+    let input = document.getElementById("user-input").value;
+    let chatBox = document.getElementById("chat-box");
+
+    let userMsg = `<div>> ${input}</div>`;
+    chatBox.innerHTML += userMsg;
+
+    let botDiv = document.createElement("div");
+    chatBox.appendChild(botDiv);
+
+    typeEffect("ACCESSING DATABASE...", botDiv);
+
+    document.getElementById("user-input").value = "";
 }
