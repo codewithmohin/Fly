@@ -1,7 +1,14 @@
-setInterval(() => {
-    let chatBox = document.getElementById("chat-box");
-    let log = document.createElement("div");
-    log.style.color = "#0f0";
-    log.innerText = binaryEffect();
-    chatBox.appendChild(log);
-}, 3000);
+function sendMessage() {
+    let input = document.getElementById("user-input").value;
+
+    addMessage(input, "user");
+
+    let reply = processCommand(input);
+
+    setTimeout(() => {
+        addMessage(reply, "bot");
+        scrollToBottom();
+    }, 800);
+
+    document.getElementById("user-input").value = "";
+}
