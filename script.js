@@ -1,6 +1,9 @@
-function processCommand(input) {
-    if (input === "hack") return "System breach initiated...";
-    if (input === "scan") return "Scanning ports...";
-    if (input === "whoami") return "You are anonymous.";
-    return getHackerReply();
+function addMessage(text, type="bot") {
+    let chatBox = document.getElementById("chat-box");
+    let div = document.createElement("div");
+
+    div.style.color = type === "user" ? "#38bdf8" : "#22c55e";
+    div.innerText = "> " + text;
+
+    chatBox.appendChild(div);
 }
