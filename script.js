@@ -1,7 +1,7 @@
-function binaryEffect() {
-    let binary = "";
-    for (let i = 0; i < 20; i++) {
-        binary += Math.round(Math.random());
-    }
-    return binary;
-}
+setInterval(() => {
+    let chatBox = document.getElementById("chat-box");
+    let log = document.createElement("div");
+    log.style.color = "#0f0";
+    log.innerText = binaryEffect();
+    chatBox.appendChild(log);
+}, 3000);
