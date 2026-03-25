@@ -1,4 +1,4 @@
-let str = "hello";
-let reversed = str.split("").reverse().join("");
+let arr = [10, 45, 2, 78, 23];
+let max = Math.max(...arr);
 
-console.log(reversed);
+console.log("Largest:", max);
