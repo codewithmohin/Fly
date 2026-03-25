@@ -1,4 +1,10 @@
-let arr = [10, 45, 2, 78, 23];
-let max = Math.max(...arr);
+let str = "javascript";
+let count = 0;
 
-console.log("Largest:", max);
+for (let char of str) {
+    if ("aeiou".includes(char)) {
+        count++;
+    }
+}
+
+console.log("Vowels:", count);
