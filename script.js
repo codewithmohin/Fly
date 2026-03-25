@@ -1,14 +1,8 @@
-function sendMessage() {
-    let input = document.getElementById("user-input").value;
+let str = "madam";
+let reversed = str.split("").reverse().join("");
 
-    addMessage(input, "user");
-
-    let reply = processCommand(input);
-
-    setTimeout(() => {
-        addMessage(reply, "bot");
-        scrollToBottom();
-    }, 800);
-
-    document.getElementById("user-input").value = "";
+if (str === reversed) {
+    console.log("Palindrome");
+} else {
+    console.log("Not Palindrome");
 }
