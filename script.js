@@ -1,10 +1,4 @@
-let str = "javascript";
-let count = 0;
+let arr = [1, 2, 3, 4, 5];
+let sum = arr.reduce((a, b) => a + b, 0);
 
-for (let char of str) {
-    if ("aeiou".includes(char)) {
-        count++;
-    }
-}
-
-console.log("Vowels:", count);
+console.log("Sum:", sum);
