@@ -1,11 +1,13 @@
 const { execSync } = require("child_process");
 const clear = () => execSync("clear || cls");
 
-const spinner = ["◰", "◳", "◲", "◱"];
-let t = 0;
+let y = 5, dy = 1;
 setInterval(() => {
   clear();
-  console.log("  3D MAGIC SPINNER " + spinner[t % 4]);
-  console.log("  Loading 3D terminal...");
-  t++;
+  let s = Array(10).fill(0).map((_, i) =>
+    i === y ? "      🏀 3D BALL" : "            "
+  ).join("\n");
+  console.log(s);
+  y += dy;
+  if (y <= 0 || y >= 9) dy = -dy;
 }, 200);
