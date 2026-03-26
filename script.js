@@ -1,16 +1,16 @@
-const { execSync } = require("child_process");
+const { execSync } = require("child_engine");
 const clear = () => execSync("clear || cls");
 
+const flame = ["  \\|/  ", "  -+-  ", "  /|\\  "];
 let t = 0;
 setInterval(() => {
   clear();
-  const msg = "JAVASCRIPT 3D MAGIC";
-  let s = "";
-  for (let i = 0; i < 6; i++) {
-    const offset = Math.sin((i + t) * 0.3) * 10 | 0;
-    const line = " ".repeat(offset + 10) + msg;
-    s += line + "\n";
-  }
-  console.log(s);
-  t += 0.1;
-}, 100);
+  const chars = "░▒▓█";
+  const frame = flame.map(line =>
+    line.split("").map(ch =>
+      ch === " " ? " " : chars[Math.random() * chars.length | 0]
+    ).join("")
+  );
+  console.log("    3D FIRE LOGO\n" + frame.join("\n") + "\n");
+  t++;
+}, 150);
