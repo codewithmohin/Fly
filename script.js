@@ -1,1 +1,1 @@
-let t=0;setInterval(()=>{console.clear();for(let y=0;y<20;y++){let l="";for(let x=0;x<40;x++)l+=Math.sin(x*0.2+t+y)>0?"/":"\\";console.log(l)}t+=0.2},60);
+let t=0;setInterval(()=>{console.clear();for(let x=0;x<40;x++)console.log("█".repeat(Math.abs(Math.sin(x+t))*20));t+=0.2},80);
