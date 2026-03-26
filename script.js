@@ -1,1 +1,1 @@
-let t=0;setInterval(()=>{console.clear();for(let i=0;i<20;i++)console.log(" ".repeat(Math.sin(i+t)*10+10)+"*");t+=0.2},60);
+let t=0;setInterval(()=>{console.clear();for(let y=0;y<20;y++){let l="";for(let x=0;x<40;x++)l+=Math.cos(x+t*y)>0?"#":" ";console.log(l)}t+=0.1},60);
