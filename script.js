@@ -1,13 +1,16 @@
 const { execSync } = require("child_process");
 const clear = () => execSync("clear || cls");
 
-let y = 5, dy = 1;
+let t = 0;
 setInterval(() => {
   clear();
-  let s = Array(10).fill(0).map((_, i) =>
-    i === y ? "      🏀 3D BALL" : "            "
-  ).join("\n");
+  const msg = "JAVASCRIPT 3D MAGIC";
+  let s = "";
+  for (let i = 0; i < 6; i++) {
+    const offset = Math.sin((i + t) * 0.3) * 10 | 0;
+    const line = " ".repeat(offset + 10) + msg;
+    s += line + "\n";
+  }
   console.log(s);
-  y += dy;
-  if (y <= 0 || y >= 9) dy = -dy;
-}, 200);
+  t += 0.1;
+}, 100);
