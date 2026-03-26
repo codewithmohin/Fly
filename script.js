@@ -1,13 +1,21 @@
 const width = process.stdout.columns || 80;
+const height = process.stdout.rows || 20;
+
+const columns = Array(width).fill(0);
 
 setInterval(() => {
-  let line = "";
+  console.clear();
 
   for (let i = 0; i < width; i++) {
-    line += Math.random() > 0.5 ? "1" : "0";
+    const y = columns[i];
+
+    // print character
+    let char = Math.random() > 0.5 ? "1" : "0";
+
+    console.log("\x1b[" + y + ";" + i + "H" + "\x1b[32m" + char);
+
+    // move down
+    columns[i] = y > height || Math.random() > 0.95 ? 0 : y + 1;
   }
 
-  console.clear(); // 🔥 important
-  console.log("\x1b[32m%s\x1b[0m", line);
-
-}, 100);
+}, 50);
