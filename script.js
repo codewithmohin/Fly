@@ -1,18 +1,13 @@
 const { execSync } = require("child_process");
 const clear = () => execSync("clear || cls");
 
-let t = 0;
+const chars = "0123456789@#$%^&*";
+let cols = Array.from({ length: 40 }, () => 0);
 setInterval(() => {
   clear();
-  const s = ["┌─────┐", "│  /  │", "│ /   │", "└─────┘"];
-  const rot = (s, t) => {
-    const r = Math.floor(t * 0.1) % 4;
-    return r === 0 ? s :
-           r === 1 ? ["  ┌─────┐", "  │  /  │", "  │ /   │", "  └─────┘"] :
-           r === 2 ? ["    ┌─────┐", "    │  /  │", "    │ /   │", "    └─────┘"] :
-                    ["  ┌─────┐", "  │  /  │", "  │ /   │", "  └─────┘"];
-  };
-  console.log(rot(s, t).join("\n"));
-  t += 1;
+  let s = Array(20).fill(0).map((_, y) =>
+    cols.map((x, cx) => x === y ? chars[Math.random() * chars.length | 0] : " ").join("")
+  ).join("\n");
+  console.log(s);
+  cols = cols.map((x) => (x + 1 + Math.random() * 2) % 20 | 0);
 }, 200);
-
