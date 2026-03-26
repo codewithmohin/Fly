@@ -1,13 +1,14 @@
 const { execSync } = require("child_process");
 const clear = () => execSync("clear || cls");
 
-let rows = Array(20).fill(0).map(() => Math.random() * 80 | 0);
-
+let t = 0;
 setInterval(() => {
   clear();
-  let s = Array(20).fill(".").map((_, i) =>
-    " ".repeat(rows[i] | 0) + "★"
-  ).join("\n");
+  let s = Array(8).fill(0).map((_, i) => {
+    const r = Math.PI * (i + t) / 6;
+    const x = Math.round(20 + 15 * Math.cos(r));
+    return " ".repeat(x) + "✨ JS MAGIC";
+  }).join("\n");
   console.log(s);
-  rows = rows.map((x) => (x + 3 + Math.random() * 6) % 80);
-}, 200);
+  t += 0.1;
+}, 100);
