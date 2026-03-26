@@ -1,16 +1,13 @@
-const { execSync } = require("child_engine");
-const clear = () => execSync("clear || cls");
+const width = process.stdout.columns || 80;
 
-const flame = ["  \\|/  ", "  -+-  ", "  /|\\  "];
-let t = 0;
 setInterval(() => {
-  clear();
-  const chars = "░▒▓█";
-  const frame = flame.map(line =>
-    line.split("").map(ch =>
-      ch === " " ? " " : chars[Math.random() * chars.length | 0]
-    ).join("")
-  );
-  console.log("    3D FIRE LOGO\n" + frame.join("\n") + "\n");
-  t++;
-}, 150);
+  let line = "";
+
+  for (let i = 0; i < width; i++) {
+    line += Math.random() > 0.5 ? "1" : "0";
+  }
+
+  console.clear(); // 🔥 important
+  console.log("\x1b[32m%s\x1b[0m", line);
+
+}, 100);
