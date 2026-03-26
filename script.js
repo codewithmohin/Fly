@@ -1,13 +1,13 @@
 let t = 0;
 setInterval(() => {
   console.clear();
-  for (let y = 0; y < 20; y++) {
+  for (let y = -10; y < 10; y++) {
     let line = "";
-    for (let x = 0; x < 40; x++) {
-      let z = Math.sin(x * 0.3 + t) + Math.cos(y * 0.3 + t);
-      line += z > 0 ? "█" : ".";
+    for (let x = -20; x < 20; x++) {
+      let d = Math.sqrt(x*x + y*y);
+      line += Math.sin(d - t) > 0 ? "#" : " ";
     }
     console.log(line);
   }
-  t += 0.1;
-}, 80);
+  t += 0.3;
+}, 60);
