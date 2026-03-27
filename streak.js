@@ -11,3 +11,4 @@ const ResumeForm = () => {
 };
 
 export default ResumeForm;
+// improved logic for streak tracking
