@@ -24,7 +24,7 @@ public class FractionalKnapsack {
             if (currentWeight + item.weight <= capacity) {
                 // Take the whole item
                 currentWeight += item.weight;
-                totalValue += item.value;
+                totalValue += item.value;git 
             } else {
                 // Take fraction of the item
                 int remainingCapacity = capacity - currentWeight;
