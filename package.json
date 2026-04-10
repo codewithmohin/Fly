@@ -1,0 +1,15 @@
+{
+  "name": "arik",
+  "version": "1.0.0",
+  "description": "",
+  "main": "auto-commit.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "simple-git": "^3.33.0"
+  }
+}
