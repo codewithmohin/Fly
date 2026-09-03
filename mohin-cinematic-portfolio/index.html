@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohin Nadaf — cinematic developer portfolio.">
+  <title>Mohin Nadaf — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__label">MOHIN NADAF</span>
+      <div class="preloader__line"><span></span></div>
+      <span class="preloader__percent">0%</span>
+    </div>
+  </div>
+
+  <div class="scroll-cursor" aria-hidden="true"><span></span></div>
+
+  <header class="topbar">
+    <a class="home-mark magnetic" href="#hero" aria-label="Go home">MN</a>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <button class="nav-link magnetic" data-target="about">About</button>
+      <button class="nav-link magnetic" data-target="web">Web</button>
+      <button class="nav-link magnetic" data-target="projects">Projects</button>
+      <button class="nav-link magnetic" data-target="contact">Contact</button>
+    </nav>
+
+    <a class="top-contact btn btn--small magnetic" href="mailto:your@email.com">Let's talk <span>↗</span></a>
+
+    <button class="menu-toggle magnetic" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="portfolio">
+    <section class="section section--hero is-active" id="hero" data-index="0" data-video="">
+      <div class="section__media section__media--gradient"></div>
+      <div class="hero-grid"></div>
+      <div class="section__content section__content--hero">
+        <p class="eyebrow reveal">01 / DEVELOPER PORTFOLIO</p>
+        <h1 class="hero-title reveal">MOHIN<br><span>NADAF</span></h1>
+        <div class="hero-bottom reveal">
+          <p class="hero-description">Student. Developer. Builder.<br>Turning ideas into working digital products.</p>
+          <div class="hero-word-wrap">
+            <span class="hero-word">CODE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about" data-index="1">
+      <div class="section__media section__media--about"></div>
+      <div class="section__content split">
+        <div>
+          <p class="eyebrow reveal">02 / ABOUT ME</p>
+          <h2 class="heading reveal">CURIOUS.<br>CONSISTENT.<br>BUILDING.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p class="lead">I'm Mohin Nadaf, a student and aspiring full-stack developer focused on turning ideas into real digital products.</p>
+          <p>I'm building my skills across frontend development, backend systems, databases, Git, modern web technologies, AI and automation.</p>
+          <div class="stat-grid">
+            <div><strong>01</strong><span>Student</span></div>
+            <div><strong>02</strong><span>Developer</span></div>
+            <div><strong>03</strong><span>Builder</span></div>
+            <div><strong>04</strong><span>Problem Solver</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="web" data-index="2">
+      <div class="section__media section__media--code"></div>
+      <div class="section__content">
+        <p class="eyebrow reveal">03 / WEB DEVELOPMENT</p>
+        <h2 class="heading heading--wide reveal">I BUILD<br>FOR THE WEB.</h2>
+        <p class="description reveal">My foundation starts with the web itself — understanding structure, design, interaction and gradually connecting everything into complete applications.</p>
+        <div class="stack-line reveal">
+          <span>HTML</span><i>→</i><span>CSS</span><i>→</i><span>JAVASCRIPT</span><i>→</i><span>REACT</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="frontend" data-index="3">
+      <div class="section__media section__media--frontend"></div>
+      <div class="section__content split">
+        <div>
+          <p class="eyebrow reveal">04 / FRONTEND</p>
+          <h2 class="heading reveal">DESIGN<br>TO<br>INTERACTION.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p class="lead">Interfaces should not only look good. They should feel responsive, clear and intentional.</p>
+          <div class="tag-list">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>Responsive UI</span><span>GSAP</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="backend" data-index="4">
+      <div class="section__media section__media--backend"></div>
+      <div class="section__content split">
+        <div>
+          <p class="eyebrow reveal">05 / BACKEND</p>
+          <h2 class="heading reveal">BEHIND<br>THE<br>INTERFACE.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p class="lead">A good interface is only one part of a product.</p>
+          <p>I'm learning how systems handle data, logic, authentication, APIs and communication behind the screen.</p>
+          <div class="mini-stack"><span>Node.js</span><span>REST APIs</span><span>Authentication</span><span>Server Logic</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="database" data-index="5">
+      <div class="section__media section__media--database"></div>
+      <div class="section__content">
+        <p class="eyebrow reveal">06 / DATABASE</p>
+        <h2 class="heading reveal">WHERE<br>DATA<br>LIVES.</h2>
+        <div class="database-ui reveal">
+          <div class="db-table">
+            <div class="db-row db-head"><span>ID</span><span>PROJECT</span><span>STATUS</span></div>
+            <div class="db-row"><span>001</span><span>Portfolio</span><span>BUILDING</span></div>
+            <div class="db-row"><span>002</span><span>Hackathon App</span><span>TESTING</span></div>
+            <div class="db-row"><span>003</span><span>Next Product</span><span>IDEA</span></div>
+          </div>
+          <p>SQL + Supabase · tables · relationships · authentication · data</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ai" data-index="6">
+      <div class="section__media section__media--ai"></div>
+      <div class="section__content split">
+        <div>
+          <p class="eyebrow reveal">07 / AI & AUTOMATION</p>
+          <h2 class="heading reveal">BUILDING<br>WITH AI.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p class="lead">AI becomes powerful when it is connected to useful software.</p>
+          <p>I'm exploring AI APIs, automation and intelligent workflows that can turn repetitive tasks into useful products.</p>
+          <div class="ai-flow"><span>IDEA</span><b>+</b><span>AI</span><b>+</b><span>API</span><b>+</b><span>AUTOMATION</span><b>→</b><span>PRODUCT</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" data-index="7">
+      <div class="section__media section__media--projects"></div>
+      <div class="section__content">
+        <p class="eyebrow reveal">08 / PROJECTS</p>
+        <h2 class="heading heading--medium reveal">IDEAS<br>→ PRODUCTS.</h2>
+        <div class="project-grid reveal">
+          <article class="project-card">
+            <span>01</span><h3>Cinematic Portfolio</h3><p>Interactive developer portfolio with section transitions and motion.</p><div class="project-tags">HTML · CSS · JS · GSAP</div>
+          </article>
+          <article class="project-card">
+            <span>02</span><h3>Full-Stack Product</h3><p>A complete application connecting interface, backend and database.</p><div class="project-tags">React · Node · Supabase</div>
+          </article>
+          <article class="project-card">
+            <span>03</span><h3>AI Utility</h3><p>A practical tool combining web development with AI-powered workflows.</p><div class="project-tags">JS · API · AI</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="hackathons" data-index="8">
+      <div class="section__media section__media--hackathons"></div>
+      <div class="section__content split">
+        <div>
+          <p class="eyebrow reveal">09 / HACKATHONS</p>
+          <h2 class="heading reveal">BUILD<br>UNDER<br>PRESSURE.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p class="lead">A deadline forces an idea to become something real.</p>
+          <div class="process">
+            <span>PROBLEM</span><i>→</i><span>IDEA</span><i>→</i><span>BUILD</span><i>→</i><span>TEST</span><i>→</i><span>DEPLOY</span>
+          </div>
+          <p>Use this area to showcase your actual hackathons, your role, the problem, the solution, tech stack and result.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journey" data-index="9">
+      <div class="section__media section__media--journey"></div>
+      <div class="section__content">
+        <p class="eyebrow reveal">10 / LEARNING JOURNEY</p>
+        <h2 class="heading heading--medium reveal">STILL<br>LEARNING.<br>STILL BUILDING.</h2>
+        <div class="timeline reveal">
+          <div><span>01</span><strong>HTML</strong><small>Structure</small></div>
+          <div><span>02</span><strong>CSS</strong><small>Design</small></div>
+          <div><span>03</span><strong>JavaScript</strong><small>Interaction</small></div>
+          <div><span>04</span><strong>React</strong><small>Frontend</small></div>
+          <div><span>05</span><strong>Node.js</strong><small>Backend</small></div>
+          <div><span>06</span><strong>SQL / Supabase</strong><small>Data</small></div>
+          <div><span>07</span><strong>Git / GitHub</strong><small>Workflow</small></div>
+          <div><span>08</span><strong>AI + Automation</strong><small>Next</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="github" data-index="10">
+      <div class="section__media section__media--github"></div>
+      <div class="section__content split">
+        <div>
+          <p class="eyebrow reveal">11 / GITHUB</p>
+          <h2 class="heading reveal">SHOW<br>ME THE<br>CODE.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p class="lead">The portfolio tells the story. The repositories show the work.</p>
+          <p>Connect this section to your real GitHub profile and highlight your strongest repositories, experiments and learning progress.</p>
+          <a class="btn magnetic" href="https://github.com/" target="_blank" rel="noopener">View GitHub <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="person" data-index="11">
+      <div class="section__media section__media--person"></div>
+      <div class="section__content split">
+        <div>
+          <p class="eyebrow reveal">12 / THE PERSON BEHIND THE CODE</p>
+          <h2 class="heading reveal">BEYOND<br>THE<br>CODE.</h2>
+        </div>
+        <div class="section-copy reveal">
+          <p class="lead">I'm curious about how things work.</p>
+          <p>I enjoy taking an idea, breaking it down and figuring out how to build it. I'm still early in my journey, but I'm serious about improving every day.</p>
+          <div class="values">
+            <span>CURIOSITY</span><span>CONSISTENCY</span><span>PROBLEM SOLVING</span><span>BUILDING</span><span>LEARNING</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact" data-index="12">
+      <div class="section__media section__media--contact"></div>
+      <div class="section__content section__content--contact">
+        <p class="eyebrow reveal">13 / CONTACT</p>
+        <h2 class="contact-title reveal">LET'S<br>BUILD<br><span>SOMETHING.</span></h2>
+        <p class="description reveal">Have an idea, project or opportunity? Let's talk.</p>
+        <div class="contact-actions reveal">
+          <a class="btn btn--large magnetic" href="mailto:your@email.com">Email me <span>↗</span></a>
+          <a class="text-link magnetic" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="text-link magnetic" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <button data-target="about">About</button>
+    <button data-target="web">Web</button>
+    <button data-target="projects">Projects</button>
+    <button data-target="contact">Contact</button>
+  </div>
+
+  <div class="section-controls">
+    <button class="previous magnetic" aria-label="Previous section">←</button>
+    <div class="counter"><span class="current-number">01</span><span>/ 13</span></div>
+    <button class="next magnetic" aria-label="Next section">→</button>
+  </div>
+
+  <div class="progress"><span></span></div>
+
+  <div class="legal-links">
+    <button data-legal="privacy">Privacy</button>
+    <button data-legal="imprint">Imprint</button>
+  </div>
+
+  <div class="legal-layer" aria-hidden="true">
+    <div class="legal-backdrop"></div>
+    <div class="legal-card">
+      <button class="legal-close magnetic" aria-label="Close">×</button>
+      <p class="eyebrow" id="legal-label">LEGAL</p>
+      <h2 id="legal-title">Privacy</h2>
+      <div id="legal-content"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/sections.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/video.js"></script>
+  <script src="js/preloader.js"></script>
+  <script src="js/legal.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+.section {
+  position: absolute;
+  inset: 0;
+  min-height: 100vh;
+  padding: 0 var(--pad);
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+.section.is-active { visibility: visible; opacity: 1; }
+.section__content {
+  position: relative;
+  z-index: 3;
+  width: min(100%, var(--max));
+  margin: 0 auto;
+}
+.section__content--hero { padding-top: 4rem; }
+.section__content--contact { text-align: center; }
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, .72fr);
+  gap: clamp(3rem, 8vw, 10rem);
+  align-items: center;
+}
+.section__media {
+  position: absolute;
+  inset: 0;
+  z-index: -3;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.04);
+}
+.section__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.82), rgba(0,0,0,.35) 55%, rgba(0,0,0,.7)),
+    linear-gradient(0deg, rgba(0,0,0,.72), transparent 45%, rgba(0,0,0,.3));
+}
+.section__media--gradient {
+  background:
+    radial-gradient(circle at 70% 35%, rgba(120,120,120,.18), transparent 30%),
+    radial-gradient(circle at 25% 70%, rgba(255,255,255,.06), transparent 30%),
+    #080808;
+}
+.section__media--about { background: radial-gradient(circle at 72% 45%, #292929, #080808 48%); }
+.section__media--code { background: linear-gradient(135deg, #111 0 40%, #050505 40% 100%); }
+.section__media--frontend { background: radial-gradient(circle at 75% 50%, #252525, #070707 55%); }
+.section__media--backend { background: linear-gradient(120deg, #0b0b0b, #202020, #050505); }
+.section__media--database { background: radial-gradient(circle at 70% 50%, #292929, #080808 52%); }
+.section__media--ai { background: radial-gradient(circle at 65% 45%, #303030, #080808 55%); }
+.section__media--projects { background: linear-gradient(135deg, #191919, #060606 60%); }
+.section__media--hackathons { background: radial-gradient(circle at 30% 50%, #252525, #070707 58%); }
+.section__media--journey { background: linear-gradient(90deg, #080808, #202020, #080808); }
+.section__media--github { background: radial-gradient(circle at 70% 50%, #262626, #070707 55%); }
+.section__media--person { background: radial-gradient(circle at 28% 48%, #292929, #070707 56%); }
+.section__media--contact { background: radial-gradient(circle at 50% 50%, #242424, #050505 58%); }

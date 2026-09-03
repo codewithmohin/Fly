@@ -1,0 +1,8 @@
+@keyframes cursorPulse {
+  from { transform:scale(1); opacity:.8; }
+  to { transform:scale(2.7); opacity:0; }
+}
+.reveal { opacity:0; transform:translateY(35px); }
+.section.is-active .reveal { opacity:1; transform:none; transition:opacity .8s var(--ease), transform .9s var(--ease); }
+.section.is-active .reveal:nth-child(2) { transition-delay:.08s; }
+.section.is-active .reveal:nth-child(3) { transition-delay:.16s; }
